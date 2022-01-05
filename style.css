@@ -1,4 +1,15 @@
 
+@import url('http://fonts.cdnfonts.com/css/bahnschrift');
+:root {
+    --withe-color: rgba(255, 255, 255, 0.9);
+    --black-color: rgba(22, 35, 40);
+    --green-color: rgba(63, 192, 96);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* ____________jamal start sign in Page________________ */
 .l_youfood{
@@ -22,7 +33,6 @@
     color: var(--green-color);
     font-family:bahnschrift ;
 }
-
 
 .p_signup{  
     padding:10px;
@@ -256,3 +266,288 @@
 
 
 /* ____________jamal end sign in Page________________ */
+
+
+
+header {
+    background: url(./images/Groupe-25.svg),
+    url(./images/Groupe-27.svg),
+    url(./images/Objects.svg),
+    url(./images/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: 400px, 424px, 36px, 21px;
+    height: 100vh;
+    font-family: 'Bahnschrift', sans-serif;
+    color: var(--withe-color);
+    background-position: top left, bottom left, 45% 18%, 94% 92%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+.navbar .logo h2 {
+    display: none;
+}
+.navbar .menu-wrap .menu-check {
+    display: none;
+}
+.navbar .menu-wrap .menu > div > div > ul {
+    display: flex;
+    list-style: none;
+}
+.navbar .menu-wrap .menu > div > div > ul > li > a {
+    margin: 0 1rem;
+}
+.navbar .menu-wrap .menu > div > div > ul > li:first-child > a,
+.navbar .menu-wrap .menu > div > div > ul > li > a:hover {
+    color: var(--green-color);
+}
+.navbar .menu-wrap .menu > div > div > ul > li:last-child {
+    margin-left: 6rem;
+    margin-right: 4rem;
+}
+
+.navbar .menu-wrap .menu > div > div > ul > li > a::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--black-color);
+    border-radius: 25px;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.6s;
+    position: absolute;
+}
+.navbar .menu-wrap .menu > div > div > ul > li > a:hover::before{
+    width: 100%;
+}
+
+/* -----------------end navbar----------------- */
+
+.home {
+    color: var(--black-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home > .section-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.home > .section-one > h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+.home > .section-one > h1 {
+    font-size: 7rem;
+    letter-spacing: 7px;
+    font-weight: 100;
+}
+ .home > .section-one > h1 > span {
+    color: var(--green-color);
+}
+.home > .section-one > p {
+    text-transform: uppercase;
+    font-size: 11pt;
+}
+.home > .section-one > button {
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 12.5rem;
+    margin-left: 6rem;
+    padding: 25px;
+    background: url(./images/BG.svg) no-repeat;
+    background-size: cover;
+    outline: none;
+    border: none;
+    color: var(--withe-color);
+    cursor: pointer;
+    font-size: 15pt;
+}
+.home > .section-two {
+    position: relative;
+    bottom: 5px;
+    left: 50px;
+    z-index: 0;
+}
+.home > .section-two > img{
+    width: 27rem;
+    
+}
+
+@media screen and (max-width:700px) {
+    header{
+        background: none;
+        /* background-image: url(./images/Groupe-25.svg);
+        background-repeat: no-repeat; */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        background: var(--black-color);
+        padding: 0.5rem;
+    }
+    
+      .navbar a {
+        color: var(--withe-color);
+      }
+
+    
+      .navbar .logo h2 {
+        display: block;
+        font-size: 28px;
+        color: var(--withe-color);
+        letter-spacing: 3px;
+      }
+      .navbar .logo h2 span {
+          color: var(--green-color);
+      }
+    
+      .navbar .menu-wrap .menu > div > div > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: center;
+      }
+      .navbar .menu-wrap .menu > div > div > ul > li:last-child {
+        margin: 0;
+      }
+      
+      
+      /* humberger menu*/
+      .navbar .menu-wrap .menu-check {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        z-index: 4;
+        opacity: 0;
+      }
+      
+      .navbar .menu-wrap .hamburger {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 54px;
+        height: 45px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+      }
+    
+      .navbar .menu-wrap .hamburger > div {
+        background-color: var(--green-color);
+        width: 100%;
+        height: 3px;
+        position: relative;
+      }
+      
+      .navbar .menu-wrap .hamburger > div:before,
+      .navbar .menu-wrap .hamburger > div:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: var(--green-color);
+        top: -10px;
+      }
+      
+      .navbar .menu-wrap .hamburger > div:after {
+        top: 10px;
+      }
+      
+      /*end menu*/
+      
+      .navbar .menu-wrap .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+      }
+      
+      .navbar .menu-wrap .menu > div {
+        background: var(--black-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      
+      .navbar .menu-wrap .menu > div > div {
+        text-align: center;
+        opacity: 0;
+      }
+      
+      .navbar .menu-wrap .menu > div > div > ul > li > ul > li {
+      padding: 10px 0;
+      }
+      
+      /* Show Menu */
+      .navbar .menu-wrap .menu-check:checked ~ .menu {
+        visibility: visible;
+      }
+      .navbar .menu-wrap .menu-check:checked ~ .menu > div > div {
+        opacity: 1;
+      }
+
+
+    .home {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+    .home > .section-two {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .home > .section-two > img {
+        width: 69vw;
+    }
+    .home > .section-one {
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .home > .section-one > h2{
+        font-size: 8vw;
+    }
+    .home > .section-one > h1{
+        font-size: 21vw;
+    }
+    .home > .section-one > P{
+        font-size: 3vw;
+    }
+
+    .home > .section-one > button {
+        margin: 0;
+    }
+}
+
