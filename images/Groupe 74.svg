@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="88" viewBox="0 0 91 88">
+  <g id="Groupe_74" data-name="Groupe 74" transform="translate(-2085 -25)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(2085 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <ellipse cx="45.5" cy="44" rx="45.5" ry="44" stroke="none"/>
+      <ellipse cx="45.5" cy="44" rx="45" ry="43.5" fill="none"/>
+    </g>
+    <text id="photo" transform="translate(2099 77)" fill="#3fc060" font-size="25" font-family="Bahnschrift"><tspan x="0" y="0">photo</tspan></text>
+  </g>
+</svg>
