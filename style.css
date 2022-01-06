@@ -5,9 +5,10 @@
   --green-color: rgba(63, 192, 96);
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bahnschrift;
 }
 
 /* ____________jamal start sign in Page________________ */
@@ -767,6 +768,10 @@ header {
   background-color: var(--green-color);
   border: none;
   border-radius: 8px;
+}
+
+.home > .section-one > button {
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
