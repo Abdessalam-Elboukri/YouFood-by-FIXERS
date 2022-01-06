@@ -158,6 +158,225 @@
     font-size: 20px;
     margin-right: 50px;
 }     
+
+
+/* _____________container */
+.cotnr_info{
+    padding-top:10px;
+    border:1.5px solid var(--green-color);
+    border-radius:10px;
+    display: grid;
+    margin:10px 8% 10px 8%;
+    grid-template-columns: 265px 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 70px;
+    gap:10px;
+    z-index: 5;
+    /* background-color: rgb(255 255 255 / 77%); */
+}
+.img_persent{
+    background-image: url("images/back_prs.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-row: 1/7; 
+    
+    
+}
+
+.radio{
+     grid-column: 2/4;
+}
+.f_name  form ,.l_name form, .email form, .pass form , .c_pass form{
+   
+    display: flex;
+    flex-direction: column;
+    gap:6px 10px;
+    font-family: Bahnschrift;
+    font-size: 17px; 
+    padding-left:20px; 
+}
+.f_name  form input,.l_name form input, .email form input, .pass form input, .c_pass form input{
+    
+    border: 2px solid  var(--green-color);
+    width: 96%;
+    height: 40px;
+    border-radius: 6px;
+    padding:6px;
+    
+    
+}
+.email form input{
+  width:98%;
+}
+
+.pass{
+    grid-column: 2/4;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+       
+}
+.radio .form1{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    
+    font-family: Bahnschrift;
+    font-size: 14px;
+    color:rgb(122, 122, 122);
+    
+    align-items:center;  
+    
+    border-radius:10px;
+    height: 40px;
+    width: 88%;
+    padding-left:20px; 
+
+}
+.email{
+    grid-column: 2/4;
+}
+.submit{
+    grid-column: 2/4;
+    padding-top:10px;
+    
+} 
+
+.radio .year{
+    margin-top: 10px;
+    font-family: Bahnschrift;
+    font-size: 17px; 
+    padding-left:20px; 
+
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    height:60px;
+    
+}
+.submit input{
+    width: 150px; 
+    height: 36px; 
+    padding: 3px auto; 
+    background-color: var(--green-color);
+    color:white;
+    border:1px solid var(--green-color);
+    font-weight: bahnschrift;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 50px;
+}     
+
+
+/* ____________________jamal start page INGREDIENTS  */
+.ingr_page{
+    
+    height: 100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    bottom: 10px;
+}
+.ingr_ctnr{
+    background-color: white;
+    border:0.3px solid var(--black-color);
+    border-radius: 7px;
+    width: 50%;
+    height: 88%;
+    margin-bottom:10px;
+    position:relative;
+    padding: 0px 6px;
+    overflow:scroll;
+}
+.ingr_ctnr::-webkit-scrollbar{
+    width:0;
+}
+
+.ingr_ctnr .nav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 30px;
+}
+.ingr_ctnr .nav .img{
+    position:absolute;
+    left:5px;top: 5px;
+    width: 21px;
+}
+.ingr_ctnr .nav .tl_plat{
+    color: var(--green-color);
+    font-family: bahnschrift;
+    font-size: 20px;
+}
+.p_6{
+    display: flex;
+    justify-content: center;
+}
+.p_6 img{
+    width:100%;
+    height:170px;
+}
+
+.ing_form{
+    margin-top:8px;
+    font-family: bahnschrift;
+}
+.ing_form .p_ing{
+    color: var(--green-color);
+    font-size: 23px;
+}
+.ing_form form{
+    padding-left: 5px;
+}
+
+.all_check{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+.all_check label{
+    font-size:13px;
+    color: var(--black-color);
+    
+}
+
+.check8{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:4px;
+    margin-top:10px;
+}
+.check8 label{
+    color: var(--green-color);
+    font-size: 16px;
+}
+.check8 input{
+    width:99%;
+    height: 60px;
+    border: 1px solid #162328;
+    border-radius: 5px;
+}
+.check9{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.check9 input{
+    height: 27px;
+    width:85px;
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--withe-color);
+    background-color: var(--green-color);
+    border:1px solid var(--green-color);
+    border-radius: 5px;
+    position: fixed;
+    bottom:20px;
+
+}
+
 @media only screen and (max-width: 760px) {
     
     .p_signup{
@@ -259,6 +478,11 @@
 .email form{
     margin-top: 10px;
 }
+   /* ____________jamal end sign in Page________________ */
+.ingr_ctnr{
+    width:80%;
+}
+/* ____________________jamal end page INGREDIENTS  */
 
     }
    
