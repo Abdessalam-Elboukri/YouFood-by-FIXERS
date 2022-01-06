@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 
-
 /* ____________jamal start sign in Page________________ */
 .l_youfood{
   display:flex;
@@ -159,6 +158,7 @@ width:98%;
   font-size: 20px;
   margin-right: 50px;
 }     
+
 
 
 /* ____________________jamal start page INGREDIENTS  */
@@ -372,6 +372,7 @@ width:98%;
 .email .into{
 margin-top: 10px;
 }
+
 
    /* ____________jamal end sign in Page________________ */
 .ingr_ctnr{
