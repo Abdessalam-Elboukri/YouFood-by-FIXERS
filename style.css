@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: bahnschrift;
 }
 
 header {
@@ -292,3 +293,4 @@ header {
         margin: 0;
     }
 }
+
