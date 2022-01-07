@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: bahnschrift;
+    text-decoration: none;
 }
 
 /* ____________jamal start sign in Page________________ */
@@ -402,7 +403,6 @@ header {
 }
 
 .navbar a {
-  text-decoration: none;
   color: var(--black-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -906,9 +906,9 @@ header {
 }
 /* ------------Your plats start-------------- */
 .headerYR{
-    background: url(/images/Groupe\ défilant\ 2.png);
+    background: url(/images/Groupe\ défilant\ 2.svg);
     background-size: cover;
-    height: 180px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
@@ -935,17 +935,19 @@ header {
 .titlePage{
     text-align: center;
     padding: 40px 0;
-    font-size: 4vw;
-    letter-spacing: 3px; 
+    font-size: 20px;
+    letter-spacing: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.titlePage h1 {
-    font-weight: 100; 
-}
-.titlePage h1{
+
+.titlePage h1{ 
     background: url(/images/Ellipse.svg), url(/images/Ellipse.svg);
-    background-size: 1.5rem;
+    background-size: 13px;
     background-repeat: no-repeat;
-    background-position: 29.5% 100%,71% 8%;
+    background-position: 0% 100%,100% 0%;
+    padding: 10px;
 }
 .titlePage h3{
     color: var(--green-color);
@@ -989,8 +991,23 @@ header {
 }
 .feedback a{
     color: var(--green-color);
-    font-size: 20px;
 }
 .feedback .fiveStars{
-    max-width: 200px;
+    width: 30%;
+}
+@media (max-width:875px){
+    .headerYR{
+        height: 80px;
+    }
+    .line{
+        justify-content: center;
+    }
+    .part{
+        max-width: 90%;
+    }
+    .plats h2 {
+        font-weight: 100;
+        font-size: 25px;
+    }  
+
 }
