@@ -995,7 +995,7 @@ header {
 .feedback .fiveStars{
     width: 30%;
 }
-@media (max-width:875px){
+@media (max-width:768px){
     .headerYR{
         height: 80px;
     }
@@ -1009,5 +1009,4 @@ header {
         font-weight: 100;
         font-size: 25px;
     }  
-
 }
