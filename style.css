@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: bahnschrift;
+    text-decoration: none;
 }
 
 /* ____________jamal start sign in Page________________ */
@@ -402,7 +403,6 @@ header {
 }
 
 .navbar a {
-  text-decoration: none;
   color: var(--black-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -903,4 +903,110 @@ header {
   .navebar-aa .menu-wrap .menu-check:checked ~ .menu > div > div {
     opacity: 1;
   }
+}
+/* ------------Your plats start-------------- */
+.headerYR{
+    background: url(/images/Groupe\ défilant\ 2.svg);
+    background-size: cover;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.headerTitles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.bonAppetit h2{
+    transform: rotate(-28deg);
+    text-decoration: underline;
+    font-family: 'Segoe Script', sans-serif;
+    
+}
+.welcome h2, .bonAppetit h2{
+    color: var(--green-color); 
+    font-size: 3vw;
+    font-weight: 100;
+    letter-spacing: 3px; 
+}
+
+.titlePage{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    letter-spacing: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlePage h1{ 
+    background: url(/images/Ellipse.svg), url(/images/Ellipse.svg);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 0% 100%,100% 0%;
+    padding: 10px;
+}
+.titlePage h3{
+    color: var(--green-color);
+    font-weight: var(--green-color);
+}
+.plats{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.plats h2{
+    font-weight: 100;
+    font-size: 38px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.part{
+    max-width: 45%;
+}
+.box{
+    border: solid 1.5px var(--green-color);
+    border-color: var(--green-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box .plats{
+    width: 100%;
+    border-bottom: solid 1.5px var(--green-color);   
+}
+.feedback{
+    padding: 14px 20px 16px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
+.feedback a{
+    color: var(--green-color);
+}
+.feedback .fiveStars{
+    width: 30%;
+}
+@media (max-width:768px){
+    .headerYR{
+        height: 80px;
+    }
+    .line{
+        justify-content: center;
+    }
+    .part{
+        max-width: 90%;
+    }
+    .plats h2 {
+        font-weight: 100;
+        font-size: 25px;
+    }  
 }
