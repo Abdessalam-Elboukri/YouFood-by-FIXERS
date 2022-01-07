@@ -1065,7 +1065,7 @@ footer > .footre-a > .footre-p > p span {
 }
 /* ------------Your plats start-------------- */
 .headerYR{
-    background: url(/images/Groupe\ défilant\ 2.svg);
+    background: url(./images/Groupe\ défilant\ 2.svg);
     background-size: cover;
     height: 13vw;
     display: flex;
@@ -1105,7 +1105,7 @@ footer > .footre-a > .footre-p > p span {
 }
 
 .titlePage h1{ 
-    background: url(/images/Ellipse.svg), url(/images/Ellipse.svg);
+    background: url(./images/Ellipse.svg), url(./images/Ellipse.svg);
     background-size: 2vw;
     background-repeat: no-repeat;
     background-position: 0% 100%,99% 0%;
