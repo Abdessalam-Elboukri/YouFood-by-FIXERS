@@ -1,6 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/bahnschrift");
 :root {
   --withe-color: rgba(255, 255, 255, 0.9);
+  --gray-color:#707070;
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
   --form-color: rgb(233, 233, 233);
@@ -874,15 +875,16 @@ header {
   content: "food title";
 } */
 
-.all-plats > button {
-  font-size: 1.5rem;
-  padding: 0.5rem 1.5rem;
+.all-plats > button, 
+.message button {
+  font-size: 1.8rem;
+  padding: 0.6rem 1.5rem;
   letter-spacing: 0.2rem;
-  font-weight: 700;
+  font-weight: 100;
   color: var(--withe-color);
   background-color: var(--green-color);
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 3px #028f26;
 }
 
@@ -1196,7 +1198,8 @@ footer > .footre-a > .footre-p > p span {
     .plats h2 {
         font-weight: 100;
         font-size: 25px;
-    }  
+    } 
+    /* ------------Your plats start-------------- */ 
      /* ----------------responsive formulaire---------------- */
      .formulaire > .title {
       flex-direction: column;
@@ -1347,4 +1350,70 @@ footer > .footre-a > .footre-p > p span {
   border-radius: 5px;
   outline: none;
   background: var(--green-color);
+}
+/* --------------------------Feedbacks start------------------------- */
+main .leftSide{
+  width: 70%;
+}
+.leftSide img{
+  width: 100%;
+}
+.leftSide .personnalFeedback{
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px;
+  border-color: var(--green-color);
+  border-radius: 8px;
+}
+.leftSide .personnalFeedback .imgAndNote, .message{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.imgAndNote{
+  padding: 35px 20px 5px;
+}
+.imgRate, .message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 100;
+}
+.imgRate img{
+  height: 75%;
+}
+.note5img{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  color: var(--gray-color);
+}
+.fiveImg, .noteRate{
+  width: 20vh;
+}
+.noteRate h1{
+  font-size: 15vh;
+  font-weight: 200;
+}
+.noteRate h6{
+  font-size: 2.5vh;
+}
+.message{
+  font-size: 2vw !important;
+}
+.yourComment{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 50%;
+}
+.yourComment input{
+  height: 100%;
+}
+.message img{
+  width: 50%;
 }
