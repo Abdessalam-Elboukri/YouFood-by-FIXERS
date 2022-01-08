@@ -472,6 +472,7 @@ header {
   font-size: 1.5vmax;
   font-weight: 400;
   color: var(--withe-color);
+  text-transform: uppercase;
 }
 .navbar .menu-wrap .menu > div > .list-2 > ul > li > p {
   color: var(--withe-color);
@@ -504,11 +505,7 @@ header {
   align-items: center;
 }
 
-.navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
-  color: var(--withe-color);
-  text-transform: uppercase;
-  font-size: 1.5vmax;
-}
+
 .navbar .menu-wrap .menu > div > div > ul > li > a::before {
   content: "";
   width: 0%;
@@ -536,10 +533,10 @@ header {
   .navbar-ce a{
    color: var(--black-color) ;
  }
- .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
+ .navbar-ce .menu-wrap .menu > div > .list-2 > ul > li > span {
   color: var(--black-color);
 }
-.navbar .menu-wrap .menu > div > .list-2 > ul > li > p {
+.navbar-ce .menu-wrap .menu > div > .list-2 > ul > li > p {
   display: none;
 }
 
