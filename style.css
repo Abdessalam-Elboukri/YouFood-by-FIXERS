@@ -3,11 +3,13 @@
   --withe-color: rgba(255, 255, 255, 0.9);
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
+  --black_lite-color:#707070;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: bahnschrift;
 }
 
 /* ____________jamal start sign in Page________________ */
@@ -270,9 +272,224 @@ width:98%;
     bottom:20px;
 
 }
+/* ______________jamal end page INGREDIENTS______________________*/
+/* ________________jamal start dashbord___________________ */
+.body_dashbord{
+  background-color:#E9E9E9;
+  width:100%;
+  overflow: overlay;
+  display: grid;
+  padding-bottom: 50px; 
+}
+.wlcm_ad{
+  display:flex;
+  justify-content:flex-end;
+  font-size: 14px;
+  gap: 10px;
+}
+.wlcm_ad .wlcm{
+   color: var(--green-color);
+}
+.titl_logo{
+  
+  color:var(--green-color);
+  display:flex;
+  align-items:center;
+  gap:2px;
+  /* margin-left:5%; */
+  font-size:22px; 
+} 
+.titl_logo .logo ,.titl_logo .title , .titl_logo p{
+  font-weight:100;
+}
+.titl_logo .logo span {
+  color:var(--black-color);
+} 
+.titl_logo p{
+  font-size: 25px;
+  color:var(--black_lite-color);
+}  
+.parent_sort{
+  height:150px;
+}
+
+.parent_fix{
+  display:grid;
+  grid-template-columns: 0.7fr 1fr;
+  height: 100px;
+}
+.sort_form{
+  display: grid;
+  grid-template-columns: 60px 155px 1fr;
+  align-items:center;
+  justify-items:center;
+  
+}
+.sort_form .label_opt{
+  color: var(--black-color);
+  font-weight:500;
+}
+.sort_form .opt{
+  height: 30px;
+  width: 153px;
+  border: 2px solid #948989;
+  border-radius: 4px;
+  background: none;
+  padding-left:6px;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 10%);
+}
+
+/* .sort_form .label_opt, .sort_form .opt{
+} */
+.parent_search{
+  justify-self: end;
+  display: flex ;
+
+}
+.parent_search .btn_search {
+  background-color:var(--green-color);
+  text-decoration: none;
+  border: 2px solid var(--green-color);
+  border-radius: 10px;
+  color:var(--withe-color);
+  height: 27px;
+  width: 60px;
+  }
+.parent_search .txt_search{
+  background: none;
+  border: 2px solid var(--black_lite-color);
+  border-radius:14px;
+  height:30px;
+  padding-left:6px;
+}
+
+/* ____listplat____ */
+
+.days h3{
+  font-weight:100;
+  color: var(--black-color);
+  font-size:20px;
+  margin-bottom: 5px;
+}
+
+/* .first_row{
+  width:100%;
+} */
+
+.parent_list_plat , .parent_sort{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list_plat{
+  height: max-content;
+  
+  display:grid;
+  grid-template-columns: 110px 150px 1fr; 
+  grid-template-rows: 30% 70%;
+  background-color: var(--withe-color);
+  padding:10px 0 10px 10px;
+  box-shadow: 1px 1px 7px rgb(0 0 0 / 50%);
+
+}
+.list_plat .img{
+  grid-row: 1/3;
+  display:flex;
+  align-items: center;
+}
+.list_plat .img img{
+  width:100px;
+}
+
+.description_plat{
+  border-right:1px solid var(--black_lite-color);
+  height: 126px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  
+}
+
+.description_plat p{
+  margin-top:10px;
+  font-size: 11px;
+  color: var(--black_lite-color);
+}
+.description_plat h4{
+  font-size: 13px;
+  font-weight: 100;
+  color: var(--black-color);
+}
+
+/* _______ */
+.info_plat{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 88px 39px;
+  align-items: center;
+  justify-items: center;
+}
+.info_plat .all_info{ 
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  color:var(--black_lite-color);
+}
+.all_info h4{
+  font-size: 20px;
+  font-weight: 100;
+}
+.info_plat .stars_img{
+  width:130px;
+}
+
+
+.info_plat .parent_icons{
+  grid-column:1/4;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:end;
+  gap: 10px;
+  width:100%;
+  height: 100%;
+  align-items: center;
+  padding-right: 22px;
+  border-top: 1px solid var(--black_lite-color);
+
+}
+
+.info_plat .parent_icons img{
+  width:20px;
+  height: 20px;
+}
+
+/* ____ */
+.first_row{
+  margin-top:30px;
+}
+.secound_row{
+  margin-top:10px;
+}
+
+
+/* ______________jamal end dashbord__________________________ */
+
+
 
 @media only screen and (max-width: 760px) {
     
+  .parent_fix{
+    grid-template-rows: 82px 63px;
+  }
+  .sort_form{
+    grid-row: 2/3;
+    grid-column:1/3;
+  }
+
+
   .p_signup{
     margin-top:30px;
     background-image:url(images/Objects.svg) ,url(./images/Ellipse.svg) ,url(./images/Ellipse.svg) ,url(./images/Ellipse.svg);
