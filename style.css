@@ -414,7 +414,7 @@ header {
   background: url(./images/Groupe-25.svg), url(./images/Groupe-27.svg),
     url(./images/Objects.svg), url(./images/Ellipse.svg);
   background-repeat: no-repeat;
-  background-size: 29%, 30rem, 3%, 2%;
+  background-size: 29%, 34%, 3%, 2%;
   height: 100vh;
   font-family: "Bahnschrift", sans-serif;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
@@ -539,6 +539,10 @@ header {
  .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
   color: var(--black-color);
 }
+.navbar .menu-wrap .menu > div > .list-2 > ul > li > p {
+  display: none;
+}
+
  
 
 /* ----------------------end home page -------------- */
@@ -552,6 +556,11 @@ header {
   align-items: center;
   flex-wrap: wrap-reverse;
   margin-top: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 #home > .section-one {
   display: flex;
@@ -647,6 +656,7 @@ header {
   }
   .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
     font-size: 2.5vmax;
+    color: var(--withe-color);
   }
   .navbar .menu-wrap .menu > div > .list-2 > ul > li > p {
     display: block;
@@ -746,6 +756,7 @@ header {
   .navbar .menu-wrap .menu-check:checked ~ .menu > div > div {
     opacity: 1;
   }
+
   
 
   /*----------------------------*/
@@ -754,6 +765,7 @@ header {
     flex-direction: column-reverse;
     gap: 1.5rem;
     margin-top: 1rem;
+    position: static;
   }
   #home > .section-two {
     position: relative;
