@@ -563,11 +563,6 @@ header::after{
   align-items: center;
   flex-wrap: wrap-reverse;
   margin-top: 1.5rem;
-  /*position: absolute;
-   left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0; */
 }
 
 #home > .section-one {
@@ -608,7 +603,6 @@ header::after{
 #home > .section-two > img {
   width: 35vw;
 }
-
 .container-h {
   display: flex;
   flex-direction: column;
