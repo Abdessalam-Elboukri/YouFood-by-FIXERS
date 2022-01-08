@@ -1050,7 +1050,7 @@ footer {
   padding: 1rem;
   color: #fff;
   background: var(--black-color);
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 footer > .footre-a {
   display: flex;
@@ -1086,9 +1086,9 @@ footer > .footre-a > .footre-p > p span {
 }
 /* ------------Your plats start-------------- */
 .headerYR{
-    background: url(/images/Groupe\ défilant\ 2.svg);
+    background: url(./images/Groupe\ défilant\ 2.svg);
     background-size: cover;
-    height: 80px;
+    height: 13vw;
     display: flex;
     align-items: center;
 }
@@ -1100,9 +1100,10 @@ footer > .footre-a > .footre-p > p span {
     margin: 0 auto;
 }
 .bonAppetit h2{
-    transform: rotate(-28deg);
+    transform: rotate(-20deg);
     text-decoration: underline;
     font-family: 'Segoe Script', sans-serif;
+    font-size: 2.4vw;
     
 }
 .welcome h2, .bonAppetit h2{
@@ -1111,23 +1112,26 @@ footer > .footre-a > .footre-p > p span {
     font-weight: 100;
     letter-spacing: 3px; 
 }
+.welcome h3{
+  font-size: 3vw;
+}
 
 .titlePage{
     text-align: center;
-    padding: 40px 0;
-    font-size: 20px;
-    letter-spacing: 5px; 
+    padding: 20px 0 40px;
+    font-size: 3.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .titlePage h1{ 
-    background: url(/images/Ellipse.svg), url(/images/Ellipse.svg);
-    background-size: 13px;
+    background: url(./images/Ellipse.svg), url(./images/Ellipse.svg);
+    background-size: 2vw;
     background-repeat: no-repeat;
-    background-position: 0% 100%,100% 0%;
+    background-position: 0% 100%,99% 0%;
     padding: 10px;
+    letter-spacing: 5px; 
 }
 .titlePage h3{
     color: var(--green-color);
@@ -1158,6 +1162,7 @@ footer > .footre-a > .footre-p > p span {
     border-color: var(--green-color);
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
 }
 .box .plats{
     width: 100%;
@@ -1176,10 +1181,13 @@ footer > .footre-a > .footre-p > p span {
     width: 30%;
 }
 @media (max-width:768px){
-    .headerYR{
-        height: 80px;
-    }
-    .line{
+  .titlePage{
+    font-size: 5vw;
+  }
+  .titlePage h1 {
+    background-size: 3vw;
+  }
+  .line{
         justify-content: center;
     }
     .part{
