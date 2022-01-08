@@ -3,6 +3,7 @@
   --withe-color: rgba(255, 255, 255, 0.9);
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
+  --form-color: rgb(233, 233, 233);
 }
 * {
     margin: 0;
@@ -506,35 +507,35 @@ header {
 
 /* -----------------end navbar----------------- */
 
-.home {
+#home {
   color: var(--black-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.home > .section-one {
+#home > .section-one {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
 }
-.home > .section-one > h2 {
+#home > .section-one > h2 {
   font-size: 4vmax;
   font-weight: 100;
 }
-.home > .section-one > h1 {
+#home > .section-one > h1 {
   font-size: 10vmax;
   letter-spacing: 7px;
   font-weight: 500;
 }
-.home > .section-one > h1 > span {
+#home > .section-one > h1 > span {
   color: var(--green-color);
 }
-.home > .section-one > p {
+#home > .section-one > p {
   text-transform: uppercase;
   font-size: 1vmax;
 }
-.home > .section-one > button {
+#home > .section-one > button {
   text-transform: capitalize;
   font-weight: 700;
   width: 12.5rem;
@@ -549,7 +550,7 @@ header {
   font-size: 15pt;
 }
 
-.home > .section-two > img {
+#home > .section-two > img {
   width: 37vw;
 }
 
@@ -585,7 +586,6 @@ header {
     z-index: 1;
     background: var(--black-color);
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .navbar a {
@@ -708,35 +708,35 @@ header {
   }
   /*----------------------------*/
 
-  .home {
+  #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
     margin-top: 1rem;
   }
-  .home > .section-two {
+  #home > .section-two {
     position: relative;
     bottom: 0;
     left: 0;
   }
-  .home > .section-two > img {
+  #home > .section-two > img {
     width: 60vw;
   }
-  .home > .section-one {
+  #home > .section-one {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
-  .home > .section-one > h2 {
+  #home > .section-one > h2 {
     font-size: 8vw;
   }
-  .home > .section-one > h1 {
+  #home > .section-one > h1 {
     font-size: 21vw;
   }
-  .home > .section-one > P {
+  #home > .section-one > P {
     font-size: 3vw;
   }
 
-  .home > .section-one > button {
+  #home > .section-one > button {
     margin: 0;
     width: 51vw;
     padding: 6vw;
@@ -748,10 +748,9 @@ header {
    ------------------------------- */
 .navebar-aa {
   font-family: "Bahnschrift", sans-serif;
-  justify-content: space-around;
   background: var(--black-color);
   color: var(--withe-color);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
 }
 
 .navebar-aa a {
@@ -771,7 +770,7 @@ header {
 }
 .navebar-aa .menu-wrap .menu > div > .list-2 > ul > li > span {
   font-size: 1.5vmax;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--withe-color);
 }
 .navebar-aa .menu-wrap .menu > div > .list-2 > ul > li > p {
@@ -804,6 +803,29 @@ header {
   align-items: center;
   gap: 4rem;
   margin-top: 2rem;
+
+  background-image: url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem, 0.9rem;
+  background-position:  90% 14%, 75% 2%, 68% 31%, 95% 34%, 12% 28%, 
+                        12% 49%, 97% 55%, 80% 46%, 85% 67%, 95% 73%,
+                        12% 63%, 29% 81%, 90% 98%, 6% 97%, 67% 82%,
+                        12% 12%;
 }
 .all-plats > .title {
   display: flex;
@@ -864,7 +886,7 @@ header {
   box-shadow: 0 3px #028f26;
 }
 
-.home > .section-one > button {
+#home > .section-one > button {
     margin: 0;
 }
 
@@ -880,7 +902,6 @@ header {
     z-index: 1;
     background: var(--black-color);
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .navebar-aa a {
@@ -1029,7 +1050,7 @@ footer {
   padding: 1rem;
   color: #fff;
   background: var(--black-color);
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 footer > .footre-a {
   display: flex;
@@ -1065,9 +1086,9 @@ footer > .footre-a > .footre-p > p span {
 }
 /* ------------Your plats start-------------- */
 .headerYR{
-    background: url(/images/Groupe\ défilant\ 2.svg);
+    background: url(./images/Groupe\ défilant\ 2.svg);
     background-size: cover;
-    height: 80px;
+    height: 13vw;
     display: flex;
     align-items: center;
 }
@@ -1079,9 +1100,10 @@ footer > .footre-a > .footre-p > p span {
     margin: 0 auto;
 }
 .bonAppetit h2{
-    transform: rotate(-28deg);
+    transform: rotate(-20deg);
     text-decoration: underline;
     font-family: 'Segoe Script', sans-serif;
+    font-size: 2.4vw;
     
 }
 .welcome h2, .bonAppetit h2{
@@ -1090,23 +1112,26 @@ footer > .footre-a > .footre-p > p span {
     font-weight: 100;
     letter-spacing: 3px; 
 }
+.welcome h3{
+  font-size: 3vw;
+}
 
 .titlePage{
     text-align: center;
-    padding: 40px 0;
-    font-size: 20px;
-    letter-spacing: 5px; 
+    padding: 20px 0 40px;
+    font-size: 3.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .titlePage h1{ 
-    background: url(/images/Ellipse.svg), url(/images/Ellipse.svg);
-    background-size: 13px;
+    background: url(./images/Ellipse.svg), url(./images/Ellipse.svg);
+    background-size: 2vw;
     background-repeat: no-repeat;
-    background-position: 0% 100%,100% 0%;
+    background-position: 0% 100%,99% 0%;
     padding: 10px;
+    letter-spacing: 5px; 
 }
 .titlePage h3{
     color: var(--green-color);
@@ -1137,6 +1162,7 @@ footer > .footre-a > .footre-p > p span {
     border-color: var(--green-color);
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
 }
 .box .plats{
     width: 100%;
@@ -1155,10 +1181,13 @@ footer > .footre-a > .footre-p > p span {
     width: 30%;
 }
 @media (max-width:768px){
-    .headerYR{
-        height: 80px;
-    }
-    .line{
+  .titlePage{
+    font-size: 5vw;
+  }
+  .titlePage h1 {
+    background-size: 3vw;
+  }
+  .line{
         justify-content: center;
     }
     .part{
@@ -1168,4 +1197,154 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     }  
+     /* ----------------responsive formulaire---------------- */
+     .formulaire > .title {
+      flex-direction: column;
+      padding: 2rem 1rem !important;
+    }
+    .formulaire > form > .two > .two-a > input#file,
+    .formulaire > form > .two > .two-a > input#date {
+      width: 100% !important;
+  }
+  .formulaire > form > .three > .three-a > .three-b, 
+  .formulaire > form > .three > .three-a > .three-d {
+    flex-direction: column;
+    width: 100%;
+  }
+  .formulaire > form > .one > .one-a > input[type="text"], 
+  .formulaire > form > .one > .one-a > #check, 
+  .formulaire > form > .three > .three-a > .three-b > input[type="text"], 
+  .formulaire > form > .three > .three-a > .three-d > input[type="text"],
+  .formulaire > form > .two > .two-a > input#date, 
+  .formulaire > form > .four > .four-a input#quantity, 
+  .formulaire > form > .four > .four-a select#categ  {
+    width: 100% !important;
+  }
+
+}
+
+/* --------------------------------formulaire------------------ */
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire label {
+  padding: 8px 0 0;
+}
+.formulaire > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  position: relative;
+  background: var(--form-color);
+}
+.formulaire > .title > h2 {
+  font-weight: 100;
+}
+.formulaire > .title span {
+  color: var(--green-color);
+}
+.formulaire > .title > h5 {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+}
+
+.formulaire > form > .one,
+.formulaire > form > .two,
+.formulaire > form > .three,
+.formulaire > form > .four {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.formulaire > form > .one::after,
+.formulaire > form > .two::after,
+.formulaire > form > .three::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--form-color);
+
+}
+.formulaire > form > .one > .one-a,
+.formulaire > form > .two > .two-a,
+.formulaire > form > .three > .three-a,
+.formulaire > form > .four > .four-a {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+  gap: 10px;
+}
+.formulaire > form > .one > .one-a > input[type="text"],
+.formulaire > form > .one > .one-a > #check,
+.formulaire > form > .three > .three-a > .three-b > input[type="text"],
+.formulaire > form > .three > .three-a > .three-d > input[type="text"] {
+  height: 2.5rem;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 1rem;
+  outline: none;
+}
+.formulaire > form > .one > .one-a > #check {
+  height: 6rem;
+  resize: none;
+}
+.formulaire > form > .two > .two-a > input#file {
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  width: 35vw;
+  padding: 0.5rem;
+}
+.formulaire > form > .two > .two-a > input#date,
+.formulaire > form > .four > .four-a input#quantity,
+.formulaire > form > .four > .four-a select#categ {    
+  width: 35vw;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.formulaire > form > .three > {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+.formulaire > form > .three > .three-a > .three-b,
+.formulaire > form > .three > .three-a > .three-d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+
+.formulaire > form > .three > .three-a > .three-b > input[type="text"],
+.formulaire > form > .three > .three-a > .three-d > input[type="text"]  {
+  width: 37vw;
+}
+
+.add {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.add > input[type="button"] {
+  padding: 0.4rem 3rem;
+  font-size: 15pt;
+  font-weight: 900;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  outline: none;
+  background: var(--green-color);
 }
