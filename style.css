@@ -1197,6 +1197,29 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     }  
+     /* ----------------responsive formulaire---------------- */
+     .formulaire > .title {
+      flex-direction: column;
+      padding: 2rem 1rem !important;
+    }
+    .formulaire > form > .two > .two-a > input#file,
+    .formulaire > form > .two > .two-a > input#date {
+      width: 100% !important;
+  }
+  .formulaire > form > .three > .three-a > .three-b, 
+  .formulaire > form > .three > .three-a > .three-d {
+    flex-direction: column;
+    width: 100%;
+  }
+  .formulaire > form > .one > .one-a > input[type="text"], 
+  .formulaire > form > .one > .one-a > #check, 
+  .formulaire > form > .three > .three-a > .three-b > input[type="text"], 
+  .formulaire > form > .three > .three-a > .three-d > input[type="text"],
+  .formulaire > form > .two > .two-a > input#date, 
+  .formulaire > form > .four > .four-a input#quantity, 
+  .formulaire > form > .four > .four-a select#categ  {
+    width: 100% !important;
+  }
 
 }
 
