@@ -1197,6 +1197,7 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     }  
+
 }
 
 /* --------------------------------formulaire------------------ */
@@ -1204,6 +1205,9 @@ footer > .footre-a > .footre-p > p span {
 .formulaire {
   display: flex;
   flex-direction: column;
+}
+.formulaire label {
+  padding: 8px 0 0;
 }
 .formulaire > .title {
   display: flex;
@@ -1227,7 +1231,8 @@ footer > .footre-a > .footre-p > p span {
 
 .formulaire > form > .one,
 .formulaire > form > .two,
-.formulaire > form > .three {
+.formulaire > form > .three,
+.formulaire > form > .four {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
@@ -1247,11 +1252,12 @@ footer > .footre-a > .footre-p > p span {
 }
 .formulaire > form > .one > .one-a,
 .formulaire > form > .two > .two-a,
-.formulaire > form > .three > .three-a {
+.formulaire > form > .three > .three-a,
+.formulaire > form > .four > .four-a {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem 0.5rem 4rem;
-  width: 93%;
+  margin: 0 auto;
+  width: 85%;
   gap: 10px;
 }
 .formulaire > form > .one > .one-a > input[type="text"],
@@ -1272,11 +1278,13 @@ footer > .footre-a > .footre-p > p span {
 .formulaire > form > .two > .two-a > input#file {
   border: 2px solid var(--green-color);
   border-radius: 5px;
-  width: 35%;
+  width: 35vw;
   padding: 0.5rem;
 }
-.formulaire > form > .two > .two-a > input#date {
-  width: 22%;
+.formulaire > form > .two > .two-a > input#date,
+.formulaire > form > .four > .four-a input#quantity,
+.formulaire > form > .four > .four-a select#categ {    
+  width: 35vw;
   border: 2px solid var(--green-color);
   border-radius: 5px;
   padding: 0.5rem;
@@ -1292,11 +1300,28 @@ footer > .footre-a > .footre-p > p span {
 .formulaire > form > .three > .three-a > .three-d {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  
+  gap: 1.5rem;
 }
+
 
 .formulaire > form > .three > .three-a > .three-b > input[type="text"],
 .formulaire > form > .three > .three-a > .three-d > input[type="text"]  {
-  width: 49%;
+  width: 37vw;
+}
+
+.add {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.add > input[type="button"] {
+  padding: 0.4rem 3rem;
+  font-size: 15pt;
+  font-weight: 900;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  outline: none;
+  background: var(--green-color);
 }
