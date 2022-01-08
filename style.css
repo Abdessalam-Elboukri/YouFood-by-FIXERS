@@ -3,6 +3,7 @@
   --withe-color: rgba(255, 255, 255, 0.9);
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
+  --form-color: rgb(233, 233, 233);
 }
 * {
     margin: 0;
@@ -506,35 +507,35 @@ header {
 
 /* -----------------end navbar----------------- */
 
-.home {
+#home {
   color: var(--black-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.home > .section-one {
+#home > .section-one {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
 }
-.home > .section-one > h2 {
+#home > .section-one > h2 {
   font-size: 4vmax;
   font-weight: 100;
 }
-.home > .section-one > h1 {
+#home > .section-one > h1 {
   font-size: 10vmax;
   letter-spacing: 7px;
   font-weight: 500;
 }
-.home > .section-one > h1 > span {
+#home > .section-one > h1 > span {
   color: var(--green-color);
 }
-.home > .section-one > p {
+#home > .section-one > p {
   text-transform: uppercase;
   font-size: 1vmax;
 }
-.home > .section-one > button {
+#home > .section-one > button {
   text-transform: capitalize;
   font-weight: 700;
   width: 12.5rem;
@@ -549,7 +550,7 @@ header {
   font-size: 15pt;
 }
 
-.home > .section-two > img {
+#home > .section-two > img {
   width: 37vw;
 }
 
@@ -585,7 +586,6 @@ header {
     z-index: 1;
     background: var(--black-color);
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .navbar a {
@@ -708,35 +708,35 @@ header {
   }
   /*----------------------------*/
 
-  .home {
+  #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
     margin-top: 1rem;
   }
-  .home > .section-two {
+  #home > .section-two {
     position: relative;
     bottom: 0;
     left: 0;
   }
-  .home > .section-two > img {
+  #home > .section-two > img {
     width: 60vw;
   }
-  .home > .section-one {
+  #home > .section-one {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
-  .home > .section-one > h2 {
+  #home > .section-one > h2 {
     font-size: 8vw;
   }
-  .home > .section-one > h1 {
+  #home > .section-one > h1 {
     font-size: 21vw;
   }
-  .home > .section-one > P {
+  #home > .section-one > P {
     font-size: 3vw;
   }
 
-  .home > .section-one > button {
+  #home > .section-one > button {
     margin: 0;
     width: 51vw;
     padding: 6vw;
@@ -748,10 +748,9 @@ header {
    ------------------------------- */
 .navebar-aa {
   font-family: "Bahnschrift", sans-serif;
-  justify-content: space-around;
   background: var(--black-color);
   color: var(--withe-color);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
 }
 
 .navebar-aa a {
@@ -771,7 +770,7 @@ header {
 }
 .navebar-aa .menu-wrap .menu > div > .list-2 > ul > li > span {
   font-size: 1.5vmax;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--withe-color);
 }
 .navebar-aa .menu-wrap .menu > div > .list-2 > ul > li > p {
@@ -804,6 +803,29 @@ header {
   align-items: center;
   gap: 4rem;
   margin-top: 2rem;
+
+  background-image: url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem, 0.9rem;
+  background-position:  90% 14%, 75% 2%, 68% 31%, 95% 34%, 12% 28%, 
+                        12% 49%, 97% 55%, 80% 46%, 85% 67%, 95% 73%,
+                        12% 63%, 29% 81%, 90% 98%, 6% 97%, 67% 82%,
+                        12% 12%;
 }
 .all-plats > .title {
   display: flex;
@@ -864,7 +886,7 @@ header {
   box-shadow: 0 3px #028f26;
 }
 
-.home > .section-one > button {
+#home > .section-one > button {
     margin: 0;
 }
 
@@ -880,7 +902,6 @@ header {
     z-index: 1;
     background: var(--black-color);
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .navebar-aa a {
@@ -1168,4 +1189,106 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     }  
+}
+
+/* --------------------------------formulaire------------------ */
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  position: relative;
+  background: var(--form-color);
+}
+.formulaire > .title > h2 {
+  font-weight: 100;
+}
+.formulaire > .title span {
+  color: var(--green-color);
+}
+.formulaire > .title > h5 {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+}
+
+.formulaire > form > .one,
+.formulaire > form > .two,
+.formulaire > form > .three {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.formulaire > form > .one::after,
+.formulaire > form > .two::after,
+.formulaire > form > .three::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--form-color);
+
+}
+.formulaire > form > .one > .one-a,
+.formulaire > form > .two > .two-a,
+.formulaire > form > .three > .three-a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+  width: 93%;
+  gap: 10px;
+}
+.formulaire > form > .one > .one-a > input[type="text"],
+.formulaire > form > .one > .one-a > #check,
+.formulaire > form > .three > .three-a > .three-b > input[type="text"],
+.formulaire > form > .three > .three-a > .three-d > input[type="text"] {
+  height: 2.5rem;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 1rem;
+  outline: none;
+}
+.formulaire > form > .one > .one-a > #check {
+  height: 6rem;
+  resize: none;
+}
+.formulaire > form > .two > .two-a > input#file {
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  width: 35%;
+  padding: 0.5rem;
+}
+.formulaire > form > .two > .two-a > input#date {
+  width: 22%;
+  border: 2px solid var(--green-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.formulaire > form > .three > {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+.formulaire > form > .three > .three-a > .three-b,
+.formulaire > form > .three > .three-a > .three-d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.formulaire > form > .three > .three-a > .three-b > input[type="text"],
+.formulaire > form > .three > .three-a > .three-d > input[type="text"]  {
+  width: 49%;
 }
