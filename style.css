@@ -67,7 +67,6 @@
   width: 83%;
   gap: 10px;
   z-index: 5;
-  /* background-color: rgb(255 255 255 / 77%);*/
 }
 .img_persent {
   background-image: url("images/back_prs.svg");
@@ -273,7 +272,7 @@
 .body_dashbord{
   background-color:#E9E9E9;
   width:100%;
-  overflow: overlay;
+  overflow: scroll;
   display: grid;
   padding-bottom: 50px; 
 }
@@ -650,9 +649,7 @@ header {
     url(./images/Objects.svg), url(./images/Ellipse.svg);
   background-repeat: no-repeat;
   background-size: 29%, 34%, 3%, 2%;
-  height: 100vh;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
-  position: relative;
 }
 hr{
   border-top: 10px solid var(--green-color) !important;
@@ -815,11 +812,10 @@ hr{
   text-transform: uppercase;
   font-size: 1vmax;
 }
-#home > .section-one > button {
+#home > .section-one > a {
   text-transform: capitalize;
   font-weight: 700;
   width: 10.5rem;
-  margin-left: 6rem;
   padding: 20px;
   background: url(./images/BG.svg) no-repeat;
   background-size: cover;
@@ -828,6 +824,7 @@ hr{
   color: var(--withe-color);
   cursor: pointer;
   font-size: 15pt;
+  text-align: center;
 }
 #home > .section-two > img {
   width: 35vw;
@@ -909,22 +906,29 @@ hr{
   width: 98vw;
 }
 .container-h > .item-four > .semi-item {
-  width: 25%;
-  height: 100vh;
-  background: var(--green-color);
+  width: 29%;
+  height: 40rem;
+  background: url(./images/blogimg1.png) top center / 100% no-repeat;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 .container-h > .item-four > .semi-item:nth-child(2) {
-  background: var(--black-color);
+  background: url(./images/blogimg2.png) no-repeat;
+  background-size: 100%;
   position: relative;
   top: 6rem;
 }
 .container-h > .item-four > .semi-item:nth-child(3) {
+  background: url(./images/blogimg3.png) no-repeat;
+  background-size: 100%;
   position: relative;
   top: 12rem;
 }
-
+.container-h > .item-four > .semi-item > h2{
+  text-align: center;
+  color: var(--withe-color);
+  padding-top: 1rem;
+}
 
 
 
@@ -984,7 +988,7 @@ hr{
   .navbar .menu-wrap .menu > div > div > ul {
     display: flex;
     flex-direction: column;
-    gap: 4opx;
+    gap: 40px;
     align-items: center;
   }
   .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
@@ -1360,7 +1364,6 @@ footer > .footre-a > .footre-p > p span {
 }
 .titlePage h3{
     color: var(--green-color);
-    font-weight: var(--green-color);
 }
 .plats{
     width: 90%;
@@ -1557,7 +1560,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   padding: 0.5rem;
 }
 
-.formulaire > form > .three > {
+.formulaire > form > .three {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
