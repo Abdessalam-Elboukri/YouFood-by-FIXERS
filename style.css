@@ -872,14 +872,15 @@ header::after{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 10rem;
+  padding: 3rem 6rem;
   text-align: center;
 }
 .container-h > .item-three > .para-one {
-  padding: 4rem 2rem;
+  padding: 4rem 5rem;
   color: var(--withe-color);
   background: var(--green-color);
-  width: 20rem;
+  width: 50vw;
+  height: 55vh;
 }
 .container-h > .item-three > .para-one > h2 {
   padding: 0 2rem 2rem;
@@ -887,10 +888,11 @@ header::after{
 }
 .container-h > .item-three > .para-one > p {
   font-weight: 100;
+  width: 20vw;
+  margin: 0 auto;
 }
 .container-h > .item-three > .para-one:last-child {
   background: var(--black-color);
-  width: 18.99rem;
 }
 
 
