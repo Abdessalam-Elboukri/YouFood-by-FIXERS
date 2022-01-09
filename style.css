@@ -14,6 +14,7 @@
   font-family: bahnschrift, sans-serif;
   text-decoration: none;
 }
+
 /* ____________jamal start sign in Page________________ */
 
 .container-all .navbar-home-login {
@@ -57,9 +58,10 @@
   border: 1.5px solid var(--green-color);
   border-radius: 10px;
   display: grid;
-  margin: 10px 8% 10px 8%;
+  margin: 0 auto;
   grid-template-columns: 265px 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 70px;
+  width: 83%;
   gap: 10px;
   z-index: 5;
   /* background-color: rgb(255 255 255 / 77%);*/
@@ -122,18 +124,15 @@
 .submit {
   grid-column: 2/4;
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
 }
 
 .radio .year {
   margin-top: 10px;
   font-size: 17px;
   padding-left: 20px;
-}
-
-.submit {
-  display: flex;
-  justify-content: center;
-  height: 60px;
 }
 .submit a {
   width: 150px;
@@ -495,16 +494,14 @@
   } 
 
   .cotnr_info {
-    /* background-color:rgb(255 255 255 / 77%); */
     color: var(--black-color);
     display: grid;
     grid-template-rows: repeat(8, 70px);
-
+    width:97%;
     border: none;
-    margin: 0;
+    
   }
   .img_persent {
-    /* visibility: hidden; */
     display: none;
   }
   .p_signup .tl_signup {
@@ -600,7 +597,7 @@
   }
   .email form {
     margin-top: 10px;
-  }
+  } 
 
   .f_name .into input,
   .l_name .into input,
@@ -621,8 +618,7 @@
   .email .into {
     margin-top: 10px;
   }
-
-  /* ____________jamal end sign in Page________________ */
+  /* ____________jamal end sign up Page________________ */
   .ingr_ctnr {
     width: 80%;
   }
