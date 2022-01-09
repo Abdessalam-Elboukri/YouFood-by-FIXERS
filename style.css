@@ -5,21 +5,14 @@
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
   --black_lite-color:#707070;
+  --form-color: rgb(233, 233, 233);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: bahnschrift;
-  --form-color: rgb(233, 233, 233);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: bahnschrift;
-    text-decoration: none;
-
+  font-family: bahnschrift, sans-serif;
+  text-decoration: none;
 }
 ::-webkit-scrollbar-track{
   border-radius: 6px;
@@ -28,7 +21,6 @@
 /* ____________jamal start sign in Page________________ */
 
 .container-all .navbar-home-login {
-  font-family: "Bahnschrift", sans-serif;
   justify-content: space-between;
   background: var(--black-color);
   color: var(--withe-color);
@@ -60,7 +52,6 @@
 }
 .tl_signup p {
   font-size: 3rem;
-  font-family: bahnschrift;
 }
 /* __________fin logo */
 
@@ -70,9 +61,10 @@
   border: 1.5px solid var(--green-color);
   border-radius: 10px;
   display: grid;
-  margin: 10px 8% 10px 8%;
+  margin: 0 auto;
   grid-template-columns: 265px 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 70px;
+  width: 83%;
   gap: 10px;
   z-index: 5;
   /* background-color: rgb(255 255 255 / 77%);*/
@@ -95,7 +87,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px 10px;
-  font-family: Bahnschrift;
   font-size: 17px;
   padding-left: 20px;
 }
@@ -122,7 +113,6 @@
 .radio .form1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  font-family: Bahnschrift;
   font-size: 14px;
   color: rgb(122, 122, 122);
   align-items: center;
@@ -137,19 +127,15 @@
 .submit {
   grid-column: 2/4;
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
 }
 
 .radio .year {
   margin-top: 10px;
-  font-family: Bahnschrift;
   font-size: 17px;
   padding-left: 20px;
-}
-
-.submit {
-  display: flex;
-  justify-content: center;
-  height: 60px;
 }
 .submit a {
   width: 150px;
@@ -158,12 +144,10 @@
   background-color: var(--green-color);
   color: white;
   border: 1px solid var(--green-color);
-  font-family: bahnschrift;
   border-radius: 5px;
   font-size: 20px;
   text-decoration: none;
 }
-
 /* ____________________jamal start page INGREDIENTS  */
 .ingr_page {
   height: 100vh;
@@ -176,7 +160,7 @@
   background-color: white;
   border: 0.3px solid var(--black-color);
   border-radius: 7px;
-  width: 50%;
+  width: 40%;
   height: 88%;
   margin-bottom: 10px;
   position: relative;
@@ -201,39 +185,53 @@
 }
 .ingr_ctnr .nav .tl_plat {
   color: var(--green-color);
-  font-family: bahnschrift;
   font-size: 20px;
 }
-.p_6 {
+.ingr_plat {
   display: flex;
   justify-content: center;
 }
-.p_6 img {
+.ingr_plat img {
   width: 100%;
   height: 170px;
 }
 
 .ing_form {
   margin-top: 8px;
-  font-family: bahnschrift;
 }
-.ing_form .p_ing {
+
+.ing_form h3 , .ing_form p{
   color: var(--green-color);
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 7px;
 }
-.ing_form form {
-  padding-left: 5px;
+.ing_form .p_write{
+  font-size: 18px;
 }
+.ing_form .h3_ing{
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 25px ; 
+}
+
+.ing_form .h3_ing span{
+  font-size: 22px ; 
+  margin-left: 4px;
+}
+
 
 .all_check {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1px;
+  padding-left:10px; 
 }
 
 .all_check label {
   font-size: 13px;
   color: var(--black-color);
+
 }
 
 .check8 {
@@ -243,14 +241,11 @@
   gap: 4px;
   margin-top: 10px;
 }
-.check8 label {
-  color: var(--green-color);
-  font-size: 16px;
-}
+
 .check8 input {
   width: 99%;
   height: 60px;
-  border: 1px solid #162328;
+  border: 1.4px solid var(--black-color);
   border-radius: 5px;
 }
 .check9 {
@@ -270,7 +265,9 @@
   border-radius: 5px;
   position: fixed;
   bottom: 20px;
+
 }
+
 /* ______________jamal end page INGREDIENTS______________________*/
 /* ________________jamal start dashbord___________________ */
 .body_dashbord{
@@ -500,16 +497,14 @@
   } 
 
   .cotnr_info {
-    /* background-color:rgb(255 255 255 / 77%); */
     color: var(--black-color);
     display: grid;
     grid-template-rows: repeat(8, 70px);
-
+    width:97%;
     border: none;
-    margin: 0;
+    
   }
   .img_persent {
-    /* visibility: hidden; */
     display: none;
   }
   .p_signup .tl_signup {
@@ -605,7 +600,7 @@
   }
   .email form {
     margin-top: 10px;
-  }
+  } 
 
   .f_name .into input,
   .l_name .into input,
@@ -626,10 +621,21 @@
   .email .into {
     margin-top: 10px;
   }
-
-  /* ____________jamal end sign in Page________________ */
+  /* ____________jamal end sign up Page________________ */
   .ingr_ctnr {
     width: 80%;
+  }
+  .ingr_plat{
+    height:170px;
+  }
+  .ingr_plat img{
+    height:100%;
+    width: 90%;
+  }
+  .h3_ing{
+    display:flex; 
+    flex-direction:column;
+
   }
   }
 
@@ -644,7 +650,7 @@ header {
     url(./images/Objects.svg), url(./images/Ellipse.svg);
   background-repeat: no-repeat;
   background-size: 29%, 34%, 3%, 2%;
-  font-family: "Bahnschrift", sans-serif;
+  height: 100vh;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
   position: relative;
 }
@@ -1147,7 +1153,6 @@ hr{
 /* -------------------------------
    ------------------------------- */
 .all-plats {
-  font-family: "Bahnschrift", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1267,7 +1272,6 @@ hr{
 }
 
 footer {
-  font-family: "Bahnschrift", sans-serif;
   padding: 1rem;
   color: #fff;
   background: var(--black-color);
@@ -1799,3 +1803,118 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   }
 }
 
+.signin-container{
+  width: 80%;
+  height:80%;
+  margin: 20px auto 0;
+  border-radius:10px;
+  border: 2px solid var(--green-color);
+  display: flex;
+  background-color: transparent;
+}
+
+.signin-leftside{
+  background-image: url(./fffff.png);
+  background-size: cover;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 100;
+  margin-right: 5px;
+  position: relative;
+}
+.form-cntainr{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 20px;
+}
+.signin-rightside{
+  width: 100%;
+  padding-left: 20px;
+  background-color: transparent;
+}
+.wlc{
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  text-align: center;
+}
+.wlc h1{
+  font-size: 50px;
+}
+
+.form-cntainr form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-cntainr form .sign-email{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-cntainr form .sign-email label{
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+
+.form-cntainr form .sign-email input[type="email"],
+.form-cntainr form .sign-email input[type="password"]{
+  border: none;
+  border-bottom: 2px solid var(--green-color);
+  padding: 10px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.form-cntainr form .sign-email input:focus{
+  outline: none;
+  transform: translateY(4px);
+}
+input[type="checkbox"]:focus{
+  transform: translateY(0) !important;
+}
+
+.rmember-me{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.rmember-me label{
+  font-size: 14px !important;
+  margin-left: 6px;
+}
+.rmember-me input{
+  position: relative;
+  top: 0;
+}
+.sign-email a{
+  font-size: 14px;
+  color: var(--green-color);
+  text-decoration: underline;
+}
+.form-cntainr form input[type="submit"]{
+  background-color: var(--green-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px  green;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: white;
+  width: 150px;
+}
+
+.signin-submit{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:650px){
+  .signin-leftside{
+    display: none;
+  }
+}
