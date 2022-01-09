@@ -160,7 +160,6 @@
   font-size: 20px;
   text-decoration: none;
 }
-
 /* ____________________jamal start page INGREDIENTS  */
 .ingr_page {
   height: 100vh;
@@ -173,7 +172,7 @@
   background-color: white;
   border: 0.3px solid var(--black-color);
   border-radius: 7px;
-  width: 50%;
+  width: 40%;
   height: 88%;
   margin-bottom: 10px;
   position: relative;
@@ -201,36 +200,51 @@
   font-family: bahnschrift;
   font-size: 20px;
 }
-.p_6 {
+.ingr_plat {
   display: flex;
   justify-content: center;
 }
-.p_6 img {
+.ingr_plat img {
   width: 100%;
   height: 170px;
 }
 
 .ing_form {
   margin-top: 8px;
-  font-family: bahnschrift;
 }
-.ing_form .p_ing {
+
+.ing_form h3 , .ing_form p{
   color: var(--green-color);
-  font-size: 23px;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 7px;
 }
-.ing_form form {
-  padding-left: 5px;
+.ing_form .p_write{
+  font-size: 18px;
 }
+.ing_form .h3_ing{
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 25px ; 
+}
+
+.ing_form .h3_ing span{
+  font-size: 22px ; 
+  margin-left: 4px;
+}
+
 
 .all_check {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1px;
+  padding-left:10px; 
 }
 
 .all_check label {
   font-size: 13px;
   color: var(--black-color);
+
 }
 
 .check8 {
@@ -240,14 +254,11 @@
   gap: 4px;
   margin-top: 10px;
 }
-.check8 label {
-  color: var(--green-color);
-  font-size: 16px;
-}
+
 .check8 input {
   width: 99%;
   height: 60px;
-  border: 1px solid #162328;
+  border: 1.4px solid var(--black-color);
   border-radius: 5px;
 }
 .check9 {
@@ -267,7 +278,9 @@
   border-radius: 5px;
   position: fixed;
   bottom: 20px;
+
 }
+
 /* ______________jamal end page INGREDIENTS______________________*/
 /* ________________jamal start dashbord___________________ */
 .body_dashbord{
@@ -627,6 +640,18 @@
   /* ____________jamal end sign in Page________________ */
   .ingr_ctnr {
     width: 80%;
+  }
+  .ingr_plat{
+    height:170px;
+  }
+  .ingr_plat img{
+    height:100%;
+    width: 90%;
+  }
+  .h3_ing{
+    display:flex; 
+    flex-direction:column;
+
   }
   }
 
