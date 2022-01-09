@@ -5,27 +5,18 @@
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
   --black_lite-color:#707070;
+  --form-color: rgb(233, 233, 233);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: bahnschrift;
-  --form-color: rgb(233, 233, 233);
+  font-family: bahnschrift, sans-serif;
+  text-decoration: none;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: bahnschrift;
-    text-decoration: none;
-
-}
-
 /* ____________jamal start sign in Page________________ */
 
 .container-all .navbar-home-login {
-  font-family: "Bahnschrift", sans-serif;
   justify-content: space-between;
   background: var(--black-color);
   color: var(--withe-color);
@@ -57,7 +48,6 @@
 }
 .tl_signup p {
   font-size: 3rem;
-  font-family: bahnschrift;
 }
 /* __________fin logo */
 
@@ -92,7 +82,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px 10px;
-  font-family: Bahnschrift;
   font-size: 17px;
   padding-left: 20px;
 }
@@ -119,7 +108,6 @@
 .radio .form1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  font-family: Bahnschrift;
   font-size: 14px;
   color: rgb(122, 122, 122);
   align-items: center;
@@ -138,7 +126,6 @@
 
 .radio .year {
   margin-top: 10px;
-  font-family: Bahnschrift;
   font-size: 17px;
   padding-left: 20px;
 }
@@ -155,7 +142,6 @@
   background-color: var(--green-color);
   color: white;
   border: 1px solid var(--green-color);
-  font-family: bahnschrift;
   border-radius: 5px;
   font-size: 20px;
   text-decoration: none;
@@ -197,7 +183,6 @@
 }
 .ingr_ctnr .nav .tl_plat {
   color: var(--green-color);
-  font-family: bahnschrift;
   font-size: 20px;
 }
 .ingr_plat {
@@ -667,7 +652,6 @@ header {
   background-repeat: no-repeat;
   background-size: 29%, 34%, 3%, 2%;
   height: 100vh;
-  font-family: "Bahnschrift", sans-serif;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
   position: relative;
 }
@@ -1149,7 +1133,6 @@ header::after{
 /* -------------------------------
    ------------------------------- */
 .all-plats {
-  font-family: "Bahnschrift", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1269,7 +1252,6 @@ header::after{
 }
 
 footer {
-  font-family: "Bahnschrift", sans-serif;
   padding: 1rem;
   color: #fff;
   background: var(--black-color);
@@ -1783,3 +1765,118 @@ footer > .footre-a > .footre-p > p span {
   }
 }
 
+.signin-container{
+  width: 80%;
+  height:80%;
+  margin: 20px auto 0;
+  border-radius:10px;
+  border: 2px solid var(--green-color);
+  display: flex;
+  background-color: transparent;
+}
+
+.signin-leftside{
+  background-image: url(./fffff.png);
+  background-size: cover;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 100;
+  margin-right: 5px;
+  position: relative;
+}
+.form-cntainr{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 20px;
+}
+.signin-rightside{
+  width: 100%;
+  padding-left: 20px;
+  background-color: transparent;
+}
+.wlc{
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  text-align: center;
+}
+.wlc h1{
+  font-size: 50px;
+}
+
+.form-cntainr form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-cntainr form .sign-email{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-cntainr form .sign-email label{
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+
+.form-cntainr form .sign-email input[type="email"],
+.form-cntainr form .sign-email input[type="password"]{
+  border: none;
+  border-bottom: 2px solid var(--green-color);
+  padding: 10px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.form-cntainr form .sign-email input:focus{
+  outline: none;
+  transform: translateY(4px);
+}
+input[type="checkbox"]:focus{
+  transform: translateY(0) !important;
+}
+
+.rmember-me{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.rmember-me label{
+  font-size: 14px !important;
+  margin-left: 6px;
+}
+.rmember-me input{
+  position: relative;
+  top: 0;
+}
+.sign-email a{
+  font-size: 14px;
+  color: var(--green-color);
+  text-decoration: underline;
+}
+.form-cntainr form input[type="submit"]{
+  background-color: var(--green-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px  green;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: white;
+  width: 150px;
+}
+
+.signin-submit{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:650px){
+  .signin-leftside{
+    display: none;
+  }
+}
