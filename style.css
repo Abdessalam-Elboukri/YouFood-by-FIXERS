@@ -895,7 +895,28 @@ header::after{
   background: var(--black-color);
 }
 
-
+.container-h > .item-four {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 98vw;
+}
+.container-h > .item-four > .semi-item {
+  width: 25%;
+  height: 100vh;
+  background: var(--green-color);
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.container-h > .item-four > .semi-item:nth-child(2) {
+  background: var(--black-color);
+  position: relative;
+  top: 6rem;
+}
+.container-h > .item-four > .semi-item:nth-child(3) {
+  position: relative;
+  top: 12rem;
+}
 
 
 
