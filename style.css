@@ -879,7 +879,7 @@ hr{
   padding: 4rem 5rem;
   color: var(--withe-color);
   background: var(--green-color);
-  width: 50vw;
+  width: 37vw;
   height: 55vh;
 }
 .container-h > .item-three > .para-one > h2 {
@@ -898,6 +898,7 @@ hr{
 .container-h > .item-four {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 5px;
   width: 98vw;
 }
@@ -1122,12 +1123,26 @@ hr{
     font-size: 5vw;
   }
 
-
+  .container-h > .item-three {
+    padding: 0;
+}
   .container-h > .item-three > .para-one {
     padding: 2rem 0rem;
     width: 65vw;
-    height: 37vh;
-}
+    height: 53vw;
+  }
+  .container-h > .item-three > .para-one > p {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+  .container-h > .item-four {
+    flex-direction: column;
+    width: 98vw;
+    margin-top: 5rem;
+  }
+  .container-h > .item-four > .semi-item {
+    width: 70%;
+   }
 }
 /* -------------------------------
    ------------------------------- */
