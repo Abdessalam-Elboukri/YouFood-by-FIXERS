@@ -21,7 +21,10 @@
     text-decoration: none;
 
 }
-
+::-webkit-scrollbar-track{
+  border-radius: 6px;
+  background: var(--green-color);
+}
 /* ____________jamal start sign in Page________________ */
 
 .container-all .navbar-home-login {
@@ -641,19 +644,13 @@ header {
     url(./images/Objects.svg), url(./images/Ellipse.svg);
   background-repeat: no-repeat;
   background-size: 29%, 34%, 3%, 2%;
-  height: 100vh;
   font-family: "Bahnschrift", sans-serif;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
   position: relative;
 }
-header::after{
-  content: "";
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--green-color);
+hr{
+  border-top: 10px solid var(--green-color) !important;
+  border: none;
 }
 
 /*______________________________*/
@@ -788,7 +785,7 @@ header::after{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap-reverse;
-  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 #home > .section-one {
@@ -815,9 +812,9 @@ header::after{
 #home > .section-one > button {
   text-transform: capitalize;
   font-weight: 700;
-  width: 12.5rem;
+  width: 10.5rem;
   margin-left: 6rem;
-  padding: 25px;
+  padding: 20px;
   background: url(./images/BG.svg) no-repeat;
   background-size: cover;
   outline: none;
@@ -836,6 +833,7 @@ header::after{
 .container-h > .item-one {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 .container-h > .item-one > .item-one-one {
@@ -851,7 +849,8 @@ header::after{
 .container-h > .item-one > .item-one-one > p {
   width: 15rem;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem;
+  font-size: 20px;
 }
 
 .container-h > .item-two {
@@ -872,6 +871,7 @@ header::after{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 3rem 6rem;
   text-align: center;
 }
@@ -929,7 +929,9 @@ header::after{
   header {
     background: none;
   }
-
+  hr {
+    display: none;
+  }
   /*_____________________________________*/
 
   .navbar-home-login {
@@ -1088,8 +1090,7 @@ header::after{
   #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
-    margin-top: 1rem;
-    position: static;
+    margin-top: 2rem;
   }
   #home > .section-two {
     position: relative;
@@ -1120,6 +1121,13 @@ header::after{
     padding: 6vw;
     font-size: 5vw;
   }
+
+
+  .container-h > .item-three > .para-one {
+    padding: 2rem 0rem;
+    width: 65vw;
+    height: 37vh;
+}
 }
 /* -------------------------------
    ------------------------------- */
@@ -1401,7 +1409,7 @@ footer > .footre-a > .footre-p > p span {
       flex-direction: column;
       padding: 2rem 1rem !important;
     }
-    .formulaire > form > .two > .two-a > input#file,
+    .formulaire > form > .two > .two-a > input,
     .formulaire > form > .two > .two-a > input#date {
       width: 100% !important;
   }
@@ -1411,7 +1419,7 @@ footer > .footre-a > .footre-p > p span {
     width: 100%;
   }
   .formulaire > form > .one > .one-a > input[type="text"], 
-  .formulaire > form > .one > .one-a > #check, 
+  .formulaire > form > .one > .one-a > .check, 
   .formulaire > form > .three > .three-a > .three-b > input[type="text"], 
   .formulaire > form > .three > .three-a > .three-d > input[type="text"],
   .formulaire > form > .two > .two-a > input#date, 
@@ -1427,6 +1435,24 @@ footer > .footre-a > .footre-p > p span {
 .formulaire {
   display: flex;
   flex-direction: column;
+  background-image: url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg);
+                    
+background-repeat: no-repeat;
+background-size: 2rem, 0.9rem;
+background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%, 
+                      19% 56%, 95% 55%, 84% 97%, 85% 67%, 95% 73%,
+                      12% 63%, 29% 82%;
 }
 .formulaire label {
   padding: 8px 0 0;
@@ -1483,7 +1509,7 @@ footer > .footre-a > .footre-p > p span {
   gap: 10px;
 }
 .formulaire > form > .one > .one-a > input[type="text"],
-.formulaire > form > .one > .one-a > #check,
+.formulaire > form > .one > .one-a > .check,
 .formulaire > form > .three > .three-a > .three-b > input[type="text"],
 .formulaire > form > .three > .three-a > .three-d > input[type="text"] {
   height: 2.5rem;
@@ -1493,11 +1519,11 @@ footer > .footre-a > .footre-p > p span {
   padding: 1rem;
   outline: none;
 }
-.formulaire > form > .one > .one-a > #check {
+.formulaire > form > .one > .one-a > .check {
   height: 6rem;
   resize: none;
 }
-.formulaire > form > .two > .two-a > input#file {
+.formulaire > form > .two > .two-a > input {
   border: 2px solid var(--green-color);
   border-radius: 5px;
   width: 35vw;
