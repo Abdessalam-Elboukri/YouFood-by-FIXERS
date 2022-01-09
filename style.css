@@ -1478,4 +1478,43 @@ footer > .footre-a > .footre-p > p span {
   font-size: 1.5vw;
   padding-left: 8px;
 }
+.rightSide{
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: var(--green-color);
+  height: 80%;
+}
+.recentFeed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 419px;
+  overflow-y: scroll;
+}
+.rightSide h3{
+  text-align: center;
+  background-color: var(--green-color);
+  color: var(--withe-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+  padding: 10px 0;
+  position: sticky;
+}
+.rightSide .comment{
+  width: 94%;
+  margin: 10px auto 0;
+  gap: 10px;
+}
+.rightSide .rateInfo{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rightSide .rateInfo img{
+  width: 60%;
+}
+.rightSide .appInfo{
+  width:100%;
+}
+.rightSide hr{
+  margin: auto;
+}
 
