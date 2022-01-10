@@ -41,7 +41,15 @@ html{
   height:100vh;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 17px;
+}
+.p_signup {
+  padding: 10px;
+  background-image: url("images/back8.svg"), url("images/back9.svg");
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70%;
 }
 .p_signup {
   padding: 10px;
@@ -84,37 +92,35 @@ html{
 .radio {
   grid-column: 2/4;
 }
-.f_name .into,
-.l_name .into,
-.email .into,
-.pass .into,
-.c_pass .into {
+
+.allbox .into{
   display: flex;
   flex-direction: column;
   gap: 6px 10px;
   font-size: 17px;
-  padding-left: 20px;
-}
-.f_name .into input,
-.l_name .into input,
-.email .into input,
-.pass .into input,
-.c_pass .into input {
+  margin-left: 10px;
+} 
+.allbox .into input{
   border: 2px solid var(--green-color);
   width: 96%;
   height: 40px;
   border-radius: 6px;
   padding: 6px;
-}
-.email .into input {
+ }
+ .email .into input {
   width: 98%;
-}
+} 
+ .pass {
+   grid-column:2/4;
+   display:flex;
+   justify-content:space-around;
+   width:100%;
+   gap: 9px;
+ }
+ .fpass , .c_pass{
+   width:100%;
+ }
 
-.pass {
-  grid-column: 2/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .radio .form1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -123,7 +129,7 @@ html{
   align-items: center;
   border-radius: 10px;
   height: 40px;
-  width: 88%;
+  width: 96%;
   padding-left: 20px;
 }
 .email {
@@ -140,7 +146,7 @@ html{
 .radio .year {
   margin-top: 10px;
   font-size: 17px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .submit a {
   width: 150px;
@@ -150,8 +156,8 @@ html{
   color: white;
   border: 1px solid var(--green-color);
   border-radius: 5px;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
 }
 /* ____________________jamal start page INGREDIENTS  */
 .ingr_page {
