@@ -798,7 +798,7 @@ header {
 }
 .section-home {
   position: absolute;
-  top: 0;
+  top: 7%;
   bottom: 0;
   right: 0;
   left: 0;
@@ -1083,7 +1083,7 @@ header {
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header {
     background: none;
   }
@@ -1244,11 +1244,11 @@ header {
   .navbar .menu-wrap .menu-check:checked ~ .menu > div > div {
     opacity: 1;
   }
-
+}
   
 
   /*----------------------------*/
-
+@media (max-width:768px){
   #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
@@ -1286,7 +1286,7 @@ header {
 
   .container-h > .item-three {
     padding: 0;
-}
+  }
   .container-h > .item-three > .para-one {
     padding: 2rem 0rem;
     width: 65vw;
@@ -1406,6 +1406,7 @@ header {
   border: none;
   border-radius: 5px;
   box-shadow: 0 3px #028f26;
+  cursor: pointer;
 }
 
 #home > .section-one > button {
@@ -1755,7 +1756,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   align-items: center;
   padding: 1rem 2rem;
 }
-.add > input[type="button"] {
+.add > input[type="submit"] {
   padding: 0.4rem 3rem;
   font-size: 15pt;
   font-weight: 900;
@@ -1763,6 +1764,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   border-radius: 5px;
   outline: none;
   background: var(--green-color);
+  color: var(--withe-color);
+  font-weight: 100;
+  cursor: pointer;
 }
 /* --------------------------Feedbacks start------------------------- */
 .feedbacksMain{
