@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>YOUFOOD | Add menu</title>
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>You<span>food</span></h2>
+        </div>
+        <div class="menu-wrap">
+            <input type="checkbox" class="menu-check">
+            <!-- three line for menu responsive -->
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <!-- Menu -->
+            <div class="menu"> 
+                <div>
+                    <div class="list-1">
+                        <ul>
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="./weekly-plats.html">weekly menus</a></li>
+                            <li><a href="./yourPlats.html">your orders</a></li>
+                            <li><a href="#">blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-2">
+                        <ul>
+                            <li><span>Restaurant Manager</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar-->
+
+    <div class="formulaire">
+        <div class="title">
+            <h2>You<span>food</span> | <span>Menu Details</span></h2>
+            <h5><span class="welcome">welcome</span> Admin .</h5>
+        </div>
+        <form>
+            <div class="one">
+                <div class="one-a">
+                    <label>Food Name</label>
+                    <input type="text">
+                </div>
+                <div class="one-a">
+                    <label>Food Description</label>
+                    <textarea class="check" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="two">
+                <div class="two-a">
+                    <label>Food Image</label>
+                    <input type="file" name="Upload" >
+                </div>
+                <div class="two-a">
+                    <label>Date of menu</label>
+                    <input type="date" name="date" >
+                </div>
+            </div>
+            <div class="three">
+                <div class="three-a">
+                    <label>Menu Ingredients</label>
+                    <div class="three-b">
+                        <input type="text" placeholder="Ingredient one">
+                        <input type="text" placeholder="Ingredient three">
+                        <input type="text" placeholder="Ingredient four">
+                        <input type="text" placeholder="Ingredient five">
+                        <input type="text" placeholder="Ingredient six">
+                        <input type="text" placeholder="Ingredient seven">
+                        <input type="text" placeholder="ingredient one">
+                    </div>
+                </div>
+                <div class="three-a">
+                    <label>Deserts</label>
+                    <div class="three-d">
+                        <input type="text" placeholder="Deserts one">
+                        <input type="text" placeholder="Deserts two">
+                    </div>
+                </div>
+                <div class="three-a">
+                    <label>Salades</label>
+                    <div class="three-d">
+                        <input type="text" class="text-ab" placeholder="Salade one">
+                        <input type="text" class="text-ab" placeholder="Salade two">
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <div class="four-a">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" min="10" max="200">
+                </div>
+                <div class="four-a">
+                    <label>Category</label>
+                        <select id="categ" class="type" name="nombre">
+                            <option value="three">Monday</option>
+                            <option value="three">Tuesday</option>
+                            <option value="four">Wendesday</option>
+                            <option value="five">Thursday</option>
+                            <option value="five">Friday</option>
+                            <option value="five">Saturday</option>
+                        </select>
+                </div>
+            </div>
+            <div class="add">
+                <input type="button" value="Add">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
