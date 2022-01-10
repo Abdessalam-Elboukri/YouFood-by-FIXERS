@@ -1889,7 +1889,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  height: 100%;
+  height: 80vh;
   overflow-y: scroll;
 }
 .rightSide  ::-webkit-scrollbar{
@@ -1901,6 +1901,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   color: var(--withe-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
   padding: 10px 0;
+  font-size: 29px;
 }
 .rightSide .comment{
   width: 94%;
@@ -1917,8 +1918,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   width:100%;
 }
 hr{
-  border: 1.5px solid var(--green-color);
   width: 95%;
+  border: none;
+  border-top: 2px solid var(--green-color);
 }
 @media (max-width:768px){
   .feedbacksMain{
@@ -1959,6 +1961,9 @@ hr{
   }
   .rightSide{
     width: 100%;
+  }
+  .recentFeed{
+    height: 40vh;
   }
   .rightSide .rateInfo img {
     width: 24%;
