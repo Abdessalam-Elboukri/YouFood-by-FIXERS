@@ -792,6 +792,18 @@ header {
   color: var(--green-color);
 }
 
+.section-header {
+  height: 36rem;
+  position: relative;
+}
+.section-home {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /*______________________________*/
 
 .navbar {
@@ -1095,6 +1107,10 @@ header {
   }
   .navbar-home-login .logo h2 span {
     color: var(--green-color);
+  }
+
+  .section-home {
+    position: static;
   }
   /*_____________________________________*/
 
