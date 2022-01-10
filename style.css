@@ -54,7 +54,7 @@
   grid-column: 2/4;
   margin-left: 20px;
 }
-.tl_signup p {
+.tl_signup h3 {
   font-size: 3rem;
 }
 /* __________fin logo */
@@ -168,7 +168,7 @@
   margin-bottom: 10px;
   position: relative;
   padding: 0px 6px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .ingr_ctnr::-webkit-scrollbar {
   width: 0;
@@ -276,7 +276,7 @@
 .body_dashbord{
   background-color:#E9E9E9;
   width:100%;
-  overflow: scroll;
+  overflow-x: scroll;
   display: grid;
   padding-bottom: 50px; 
 }
@@ -512,7 +512,7 @@
 .prnt_user_img img{ 
   width:115px;
 }
-.prnt_user_img p{
+.prnt_user_img h4{
   color:var(--green-color);
   font-size:25px;
   font-weight: 500;
