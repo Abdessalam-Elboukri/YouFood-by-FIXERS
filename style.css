@@ -168,7 +168,7 @@
   margin-bottom: 10px;
   position: relative;
   padding: 0px 6px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .ingr_ctnr::-webkit-scrollbar {
   width: 0;
