@@ -798,6 +798,18 @@ header {
   color: var(--green-color);
 }
 
+.section-header {
+  height: 36rem;
+  position: relative;
+}
+.section-home {
+  position: absolute;
+  top: 7%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /*______________________________*/
 
 .navbar {
@@ -1077,7 +1089,7 @@ header {
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header {
     background: none;
   }
@@ -1101,6 +1113,10 @@ header {
   }
   .navbar-home-login .logo h2 span {
     color: var(--green-color);
+  }
+
+  .section-home {
+    position: static;
   }
   /*_____________________________________*/
 
@@ -1234,11 +1250,11 @@ header {
   .navbar .menu-wrap .menu-check:checked ~ .menu > div > div {
     opacity: 1;
   }
-
+}
   
 
   /*----------------------------*/
-
+@media (max-width:768px){
   #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
@@ -1276,7 +1292,7 @@ header {
 
   .container-h > .item-three {
     padding: 0;
-}
+  }
   .container-h > .item-three > .para-one {
     padding: 2rem 0rem;
     width: 65vw;
@@ -1378,7 +1394,7 @@ header {
   align-items: center;
 }
 
-.all-plats > .day-1 > .plat > img {
+.all-plats > .day-1 > .plat > a > img {
   width: 35vw;
   border: 2px solid var(--green-color);
   border-radius: 8px;
@@ -1396,6 +1412,7 @@ header {
   border: none;
   border-radius: 5px;
   box-shadow: 0 3px #028f26;
+  cursor: pointer;
 }
 
 #home > .section-one > button {
@@ -1580,6 +1597,9 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     } 
+    .all-plats > .day-1 > .plat > a > img {
+      width: 71vw;
+     }
      /* ----------------responsive formulaire---------------- */
      .formulaire > .title {
       flex-direction: column;
@@ -1742,7 +1762,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   align-items: center;
   padding: 1rem 2rem;
 }
-.add > input[type="button"] {
+.add > input[type="submit"] {
   padding: 0.4rem 3rem;
   font-size: 15pt;
   font-weight: 900;
@@ -1750,6 +1770,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   border-radius: 5px;
   outline: none;
   background: var(--green-color);
+  color: var(--withe-color);
+  font-weight: 100;
+  cursor: pointer;
 }
 /* --------------------------Feedbacks start------------------------- */
 .feedbacksMain{
@@ -1892,7 +1915,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  height: 100%;
+  height: 80vh;
   overflow-y: scroll;
 }
 .rightSide  ::-webkit-scrollbar{
@@ -1904,6 +1927,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   color: var(--withe-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
   padding: 10px 0;
+  font-size: 29px;
 }
 .rightSide .comment{
   width: 94%;
@@ -1920,8 +1944,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   width:100%;
 }
 hr{
-  border: 1.5px solid var(--green-color);
   width: 95%;
+  border: none;
+  border-top: 2px solid var(--green-color);
 }
 @media (max-width:768px){
   .feedbacksMain{
@@ -1962,6 +1987,9 @@ hr{
   }
   .rightSide{
     width: 100%;
+  }
+  .recentFeed{
+    height: 40vh;
   }
   .rightSide .rateInfo img {
     width: 24%;
@@ -2027,11 +2055,10 @@ hr{
   color: var(--black-color);
 }
 
-
 .form-cntainr form .sign-email input[type="email"],
 .form-cntainr form .sign-email input[type="password"]{
   border: none;
-  border-bottom: 2px solid var(--greenF-color);
+  border-bottom: 2px solid var(--green-color);
   padding: 10px;
   width: 100%;
   transition: transform 0.3s ease-in-out;
