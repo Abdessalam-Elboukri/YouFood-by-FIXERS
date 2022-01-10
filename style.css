@@ -5,20 +5,26 @@
   --black-color: rgba(22, 35, 40);
   --green-color: rgba(63, 192, 96);
   --black_lite-color:#707070;
+  --form-color: rgb(233, 233, 233);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: bahnschrift;
+  font-family: bahnschrift , sans-serif;
   --form-color: rgb(233, 233, 233);
   text-decoration: none;
-} 
+
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 6px;
+  background: var(--green-color);
+}
 
 /* ____________jamal start sign in Page________________ */
 
 .container-all .navbar-home-login {
-  font-family: "Bahnschrift", sans-serif;
   justify-content: space-between;
   background: var(--black-color);
   color: var(--withe-color);
@@ -65,7 +71,6 @@
   width: 83%;
   gap: 10px;
   z-index: 5;
-  /* background-color: rgb(255 255 255 / 77%);*/
 }
 .img_persent {
   background-image: url("images/back_prs.svg");
@@ -271,7 +276,7 @@
 .body_dashbord{
   background-color:#E9E9E9;
   width:100%;
-  overflow: overlay;
+  overflow: scroll;
   display: grid;
   padding-bottom: 50px; 
 }
@@ -756,19 +761,11 @@ header {
     url(./images/Objects.svg), url(./images/Ellipse.svg);
   background-repeat: no-repeat;
   background-size: 29%, 34%, 3%, 2%;
-  height: 100vh;
-  font-family: "Bahnschrift", sans-serif;
   background-position: top left, bottom left, 45% 18%, 94% 92%;
-  position: relative;
 }
-header::after{
-  content: "";
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--green-color);
+hr{
+  border-top: 10px solid var(--green-color) !important;
+  border: none;
 }
 
 /*______________________________*/
@@ -903,7 +900,7 @@ header::after{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap-reverse;
-  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 #home > .section-one {
@@ -927,12 +924,11 @@ header::after{
   text-transform: uppercase;
   font-size: 1vmax;
 }
-#home > .section-one > button {
+#home > .section-one > a {
   text-transform: capitalize;
   font-weight: 700;
-  width: 12.5rem;
-  margin-left: 6rem;
-  padding: 25px;
+  width: 10.5rem;
+  padding: 20px;
   background: url(./images/BG.svg) no-repeat;
   background-size: cover;
   outline: none;
@@ -940,6 +936,7 @@ header::after{
   color: var(--withe-color);
   cursor: pointer;
   font-size: 15pt;
+  text-align: center;
 }
 #home > .section-two > img {
   width: 35vw;
@@ -951,6 +948,7 @@ header::after{
 .container-h > .item-one {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 .container-h > .item-one > .item-one-one {
@@ -966,7 +964,8 @@ header::after{
 .container-h > .item-one > .item-one-one > p {
   width: 15rem;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem;
+  font-size: 20px;
 }
 
 .container-h > .item-two {
@@ -987,6 +986,7 @@ header::after{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 3rem 6rem;
   text-align: center;
 }
@@ -994,7 +994,7 @@ header::after{
   padding: 4rem 5rem;
   color: var(--withe-color);
   background: var(--green-color);
-  width: 50vw;
+  width: 37vw;
   height: 55vh;
 }
 .container-h > .item-three > .para-one > h2 {
@@ -1013,26 +1013,34 @@ header::after{
 .container-h > .item-four {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 5px;
   width: 98vw;
 }
 .container-h > .item-four > .semi-item {
-  width: 25%;
-  height: 100vh;
-  background: var(--green-color);
+  width: 29%;
+  height: 40rem;
+  background: url(./images/blogimg1.png) top center / 100% no-repeat;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 .container-h > .item-four > .semi-item:nth-child(2) {
-  background: var(--black-color);
+  background: url(./images/blogimg2.png) no-repeat;
+  background-size: 100%;
   position: relative;
   top: 6rem;
 }
 .container-h > .item-four > .semi-item:nth-child(3) {
+  background: url(./images/blogimg3.png) no-repeat;
+  background-size: 100%;
   position: relative;
   top: 12rem;
 }
-
+.container-h > .item-four > .semi-item > h2{
+  text-align: center;
+  color: var(--withe-color);
+  padding-top: 1rem;
+}
 
 
 
@@ -1044,7 +1052,9 @@ header::after{
   header {
     background: none;
   }
-
+  hr {
+    display: none;
+  }
   /*_____________________________________*/
 
   .navbar-home-login {
@@ -1090,7 +1100,7 @@ header::after{
   .navbar .menu-wrap .menu > div > div > ul {
     display: flex;
     flex-direction: column;
-    gap: 4opx;
+    gap: 40px;
     align-items: center;
   }
   .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
@@ -1203,8 +1213,7 @@ header::after{
   #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
-    margin-top: 1rem;
-    position: static;
+    margin-top: 2rem;
   }
   #home > .section-two {
     position: relative;
@@ -1235,11 +1244,31 @@ header::after{
     padding: 6vw;
     font-size: 5vw;
   }
+
+  .container-h > .item-three {
+    padding: 0;
+}
+  .container-h > .item-three > .para-one {
+    padding: 2rem 0rem;
+    width: 65vw;
+    height: 53vw;
+  }
+  .container-h > .item-three > .para-one > p {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+  .container-h > .item-four {
+    flex-direction: column;
+    width: 98vw;
+    margin-top: 5rem;
+  }
+  .container-h > .item-four > .semi-item {
+    width: 70%;
+   }
 }
 /* -------------------------------
    ------------------------------- */
 .all-plats {
-  font-family: "Bahnschrift", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1359,7 +1388,6 @@ header::after{
 }
 
 footer {
-  font-family: "Bahnschrift", sans-serif;
   padding: 1rem;
   color: #fff;
   background: var(--black-color);
@@ -1515,7 +1543,7 @@ footer > .footre-a > .footre-p > p span {
       flex-direction: column;
       padding: 2rem 1rem !important;
     }
-    .formulaire > form > .two > .two-a > input#file,
+    .formulaire > form > .two > .two-a > input,
     .formulaire > form > .two > .two-a > input#date {
       width: 100% !important;
   }
@@ -1525,7 +1553,7 @@ footer > .footre-a > .footre-p > p span {
     width: 100%;
   }
   .formulaire > form > .one > .one-a > input[type="text"], 
-  .formulaire > form > .one > .one-a > #check, 
+  .formulaire > form > .one > .one-a > .check, 
   .formulaire > form > .three > .three-a > .three-b > input[type="text"], 
   .formulaire > form > .three > .three-a > .three-d > input[type="text"],
   .formulaire > form > .two > .two-a > input#date, 
@@ -1541,6 +1569,24 @@ footer > .footre-a > .footre-p > p span {
 .formulaire {
   display: flex;
   flex-direction: column;
+  background-image: url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg),
+                    url(./images/Objects.svg),
+                    url(./images/Ellipse.svg);
+                    
+background-repeat: no-repeat;
+background-size: 2rem, 0.9rem;
+background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%, 
+                      19% 56%, 95% 55%, 84% 97%, 85% 67%, 95% 73%,
+                      12% 63%, 29% 82%;
 }
 .formulaire label {
   padding: 8px 0 0;
@@ -1597,7 +1643,7 @@ footer > .footre-a > .footre-p > p span {
   gap: 10px;
 }
 .formulaire > form > .one > .one-a > input[type="text"],
-.formulaire > form > .one > .one-a > #check,
+.formulaire > form > .one > .one-a > .check,
 .formulaire > form > .three > .three-a > .three-b > input[type="text"],
 .formulaire > form > .three > .three-a > .three-d > input[type="text"] {
   height: 2.5rem;
@@ -1607,11 +1653,11 @@ footer > .footre-a > .footre-p > p span {
   padding: 1rem;
   outline: none;
 }
-.formulaire > form > .one > .one-a > #check {
+.formulaire > form > .one > .one-a > .check {
   height: 6rem;
   resize: none;
 }
-.formulaire > form > .two > .two-a > input#file {
+.formulaire > form > .two > .two-a > input {
   border: 2px solid var(--green-color);
   border-radius: 5px;
   width: 35vw;
@@ -1626,7 +1672,7 @@ footer > .footre-a > .footre-p > p span {
   padding: 0.5rem;
 }
 
-.formulaire > form > .three > {
+.formulaire > form > .three {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -1690,7 +1736,7 @@ footer > .footre-a > .footre-p > p span {
   flex-direction: column;
 }
 .imgAndNote{
-  padding: 35px 20px 5px;
+  padding: 30px 20px 5px;
 }
 .imgRate, .message{
   display: flex;
@@ -1714,7 +1760,7 @@ footer > .footre-a > .footre-p > p span {
 .fiveImg, .noteRate{
   width: 20vh;
 }
-.noteRate h1{
+.noteRate h2{
   font-size: 15vh;
   font-weight: 200;
   height: 16vh;
@@ -1730,6 +1776,7 @@ footer > .footre-a > .footre-p > p span {
 .yourComment{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90%;
 }
 .yourComment textarea{
@@ -1738,6 +1785,8 @@ footer > .footre-a > .footre-p > p span {
  resize: none;
  padding: 13px;
  font-size: 1.1vw;
+ width: 100%;
+ height: 75%;
 }
 .message img{
   width: 50%;
@@ -1797,6 +1846,7 @@ footer > .footre-a > .footre-p > p span {
 .recentFeed {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   height: 419px;
   overflow-y: scroll;
@@ -1807,11 +1857,9 @@ footer > .footre-a > .footre-p > p span {
   color: var(--withe-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
   padding: 10px 0;
-  position: sticky;
 }
 .rightSide .comment{
   width: 94%;
-  margin: 10px auto 0;
   gap: 10px;
 }
 .rightSide .rateInfo{
@@ -1824,8 +1872,9 @@ footer > .footre-a > .footre-p > p span {
 .rightSide .appInfo{
   width:100%;
 }
-.rightSide hr{
-  margin: auto;
+hr{
+  border: 1.5px solid var(--green-color);
+  width: 95%;
 }
 @media (max-width:768px){
   .feedbacksMain{
@@ -1850,7 +1899,7 @@ footer > .footre-a > .footre-p > p span {
   .yourComment textarea{
     width: 80%;
     height: 20vh;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .comment .rateInfo{
     width: 100%;
@@ -1872,3 +1921,118 @@ footer > .footre-a > .footre-p > p span {
   }
 }
 
+.signin-container{
+  width: 80%;
+  height:80%;
+  margin: 20px auto 0;
+  border-radius:10px;
+  border: 2px solid var(--green-color);
+  display: flex;
+  background-color: transparent;
+}
+
+.signin-leftside{
+  background-image: url(./fffff.png);
+  background-size: cover;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 100;
+  margin-right: 5px;
+  position: relative;
+}
+.form-cntainr{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 20px;
+}
+.signin-rightside{
+  width: 100%;
+  padding-left: 20px;
+  background-color: transparent;
+}
+.wlc{
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  text-align: center;
+}
+.wlc h1{
+  font-size: 50px;
+}
+
+.form-cntainr form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-cntainr form .sign-email{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-cntainr form .sign-email label{
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+
+.form-cntainr form .sign-email input[type="email"],
+.form-cntainr form .sign-email input[type="password"]{
+  border: none;
+  border-bottom: 2px solid var(--green-color);
+  padding: 10px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.form-cntainr form .sign-email input:focus{
+  outline: none;
+  transform: translateY(4px);
+}
+input[type="checkbox"]:focus{
+  transform: translateY(0) !important;
+}
+
+.rmember-me{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.rmember-me label{
+  font-size: 14px !important;
+  margin-left: 6px;
+}
+.rmember-me input{
+  position: relative;
+  top: 0;
+}
+.sign-email a{
+  font-size: 14px;
+  color: var(--green-color);
+  text-decoration: underline;
+}
+.form-cntainr form input[type="submit"]{
+  background-color: var(--green-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px  green;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: white;
+  width: 150px;
+}
+
+.signin-submit{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:650px){
+  .signin-leftside{
+    display: none;
+  }
+}
