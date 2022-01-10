@@ -696,12 +696,12 @@ hr{
 }
 
 
-.navbar > .logo > h2 {
+.navbar > .logo > h2 > a{
   display: block;
   font-size: 2rem;
   letter-spacing: 2px;
 }
-.navbar > .logo > h2 > span {
+.navbar > .logo > h2 > a> span {
   color: var(--green-color);
 }
 .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
