@@ -40,7 +40,12 @@
 .container-all .navbar-home-login > .logo > h2 > span {
   color: var(--green-color);
 }
-
+.parent_page_signup{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .p_signup {
   padding: 10px;
   background-image: url("images/back8.svg"), url("images/back9.svg");
@@ -158,6 +163,8 @@
   justify-content: space-around;
   align-items: flex-end;
   bottom: 10px;
+  background-image:url(./images/backPop-Up.png);
+  background-size:cover; 
 }
 .ingr_ctnr {
   background-color: white;
@@ -343,6 +350,8 @@
 .parent_search{
   justify-self: end;
   display: flex ;
+  align-items: center;
+  gap: 8px;
 
 }
 .parent_search .btn_search {
@@ -566,15 +575,14 @@
 }
 
 .manager_img_edt_user {
-  width:110px;
+  width:150px;
   display:flex ;
   justify-content:space-around;
-  
-
 }
 .manager_img_accepte_user{
   justify-content:center;
-  gap:20px;
+  gap: 16px;
+  padding: 12px;
 }
 .manager_img_name_user img{
   width:30px;
