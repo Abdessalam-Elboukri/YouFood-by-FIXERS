@@ -700,6 +700,7 @@ hr{
   display: block;
   font-size: 2rem;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 .navbar > .logo > h2 > a> span {
   color: var(--green-color);
