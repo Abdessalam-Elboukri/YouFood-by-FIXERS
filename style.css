@@ -1979,7 +1979,7 @@ hr{
 .form-cntainr form .sign-email input[type="email"],
 .form-cntainr form .sign-email input[type="password"]{
   border: none;
-  border-bottom: 2px solid var(--greenF-color);
+  border-bottom: 2px solid var(--green-color);
   padding: 10px;
   width: 100%;
   transition: transform 0.3s ease-in-out;
