@@ -37,7 +37,12 @@ html{
 .container-all .navbar-home-login > .logo > h2 > span {
   color: var(--green-color);
 }
-
+.parent_page_signup{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .p_signup {
   padding: 10px;
   background-image: url("images/back8.svg"), url("images/back9.svg");
@@ -155,6 +160,8 @@ html{
   justify-content: space-around;
   align-items: flex-end;
   bottom: 10px;
+  background-image:url(./images/backPop-Up.png);
+  background-size:cover; 
 }
 .ingr_ctnr {
   background-color: white;
@@ -340,6 +347,8 @@ html{
 .parent_search{
   justify-self: end;
   display: flex ;
+  align-items: center;
+  gap: 8px;
 
 }
 .parent_search .btn_search {
@@ -563,15 +572,14 @@ html{
 }
 
 .manager_img_edt_user {
-  width:110px;
+  width:150px;
   display:flex ;
   justify-content:space-around;
-  
-
 }
 .manager_img_accepte_user{
   justify-content:center;
-  gap:20px;
+  gap: 16px;
+  padding: 12px;
 }
 .manager_img_name_user img{
   width:30px;
@@ -801,12 +809,13 @@ header {
 }
 
 
-.navbar > .logo > h2 {
+.navbar > .logo > h2 > a{
   display: block;
   font-size: 2rem;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
-.navbar > .logo > h2 > span {
+.navbar > .logo > h2 > a> span {
   color: var(--green-color);
 }
 .navbar .menu-wrap .menu > div > .list-2 > ul > li > span {
@@ -969,7 +978,7 @@ header {
   gap: 3.5rem;
   padding: 2rem 0;
 }
-.container-h > .item-two > h1 {
+.container-h > .item-two > h2 {
   font-size: 3rem;
 }
 .container-h > .item-two > img {
@@ -1013,19 +1022,19 @@ header {
 }
 .container-h > .item-four > .semi-item {
   width: 29%;
-  height: 40rem;
+  height: 649px;
   background: url(./images/blogimg1.png) top center / 100% no-repeat;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 .container-h > .item-four > .semi-item:nth-child(2) {
-  background: url(./images/blogimg2.png) no-repeat;
+  background: url(./images/blogimg2.png) top center / 100% no-repeat;
   background-size: 100%;
   position: relative;
   top: 6rem;
 }
 .container-h > .item-four > .semi-item:nth-child(3) {
-  background: url(./images/blogimg3.png) no-repeat;
+  background: url(./images/blogimg3.png) top center / 100% no-repeat;
   background-size: 100%;
   position: relative;
   top: 12rem;
@@ -1035,17 +1044,39 @@ header {
   color: var(--withe-color);
   padding-top: 1rem;
 }
-
+.container-h > .item-five {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+.container-h > .item-five > h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.container-h > .item-five > h2 > span {
+  color: var(--green-color);
+}
+.container-h > .item-five > p {
+  font-size: 1.5rem;
+}
+.ex-footer{
+  margin-top: 14rem;
+}
 .hr-header{
   width: 100% !important;
   border: none;
+  border-top: 10px solid var(--green-color);
+  
 }
 
 @media screen and (max-width: 768px) {
   header {
     background: none;
   }
-  .hr-header    display: none;
+  .hr-header {
+    display: none;
   }
   /*_____________________________________*/
 
@@ -1251,12 +1282,25 @@ header {
   }
   .container-h > .item-four {
     flex-direction: column;
-    width: 98vw;
-    margin-top: 5rem;
+    
   }
   .container-h > .item-four > .semi-item {
     width: 70%;
    }
+   .container-h > .item-four > .semi-item {
+    width: 58%;
+    height: 500px;
+  }
+  .container-h > .item-four > .semi-item:nth-child(2) {
+    position: static;
+    
+  }
+  .container-h > .item-four > .semi-item:nth-child(3) {
+    position: static;
+  }
+  .ex-footer {
+    margin-top: 0;
+}
 }
 /* -------------------------------
    ------------------------------- */
@@ -1328,7 +1372,7 @@ header {
   align-items: center;
 }
 
-.all-plats > .day-1 > .plat > img {
+.all-plats > .day-1 > .plat > a > img {
   width: 35vw;
   border: 2px solid var(--green-color);
   border-radius: 8px;
@@ -1530,6 +1574,9 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     } 
+    .all-plats > .day-1 > .plat > a > img {
+      width: 71vw;
+     }
      /* ----------------responsive formulaire---------------- */
      .formulaire > .title {
       flex-direction: column;
@@ -1591,16 +1638,18 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   position: relative;
   background: var(--form-color);
 }
-.formulaire > .title > h2 {
+.formulaire > .title > p {
   font-weight: 100;
+  font-size: 2rem;
 }
 .formulaire > .title span {
   color: var(--green-color);
 }
-.formulaire > .title > h5 {
+.formulaire > .title > .txt-exe {
   position: absolute;
   right: 1rem;
   bottom: 4rem;
+  font-size: 1rem;
 }
 
 .formulaire > form > .one,
@@ -1840,7 +1889,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  height: 100%;
+  height: 80vh;
   overflow-y: scroll;
 }
 .rightSide  ::-webkit-scrollbar{
@@ -1852,6 +1901,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   color: var(--withe-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
   padding: 10px 0;
+  font-size: 29px;
 }
 .rightSide .comment{
   width: 94%;
@@ -1868,8 +1918,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   width:100%;
 }
 hr{
-  border: 1.5px solid var(--green-color);
   width: 95%;
+  border: none;
+  border-top: 2px solid var(--green-color);
 }
 @media (max-width:768px){
   .feedbacksMain{
@@ -1910,6 +1961,9 @@ hr{
   }
   .rightSide{
     width: 100%;
+  }
+  .recentFeed{
+    height: 40vh;
   }
   .rightSide .rateInfo img {
     width: 24%;
@@ -1974,7 +2028,6 @@ hr{
   font-size: 20px;
   color: var(--black-color);
 }
-
 
 .form-cntainr form .sign-email input[type="email"],
 .form-cntainr form .sign-email input[type="password"]{
