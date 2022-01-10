@@ -1364,7 +1364,7 @@ header {
   align-items: center;
 }
 
-.all-plats > .day-1 > .plat > img {
+.all-plats > .day-1 > .plat > a > img {
   width: 35vw;
   border: 2px solid var(--green-color);
   border-radius: 8px;
@@ -1566,6 +1566,9 @@ footer > .footre-a > .footre-p > p span {
         font-weight: 100;
         font-size: 25px;
     } 
+    .all-plats > .day-1 > .plat > a > img {
+      width: 71vw;
+     }
      /* ----------------responsive formulaire---------------- */
      .formulaire > .title {
       flex-direction: column;
@@ -2012,7 +2015,6 @@ hr{
   font-size: 20px;
   color: var(--black-color);
 }
-
 
 .form-cntainr form .sign-email input[type="email"],
 .form-cntainr form .sign-email input[type="password"]{
