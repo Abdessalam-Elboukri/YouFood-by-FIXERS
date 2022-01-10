@@ -1013,19 +1013,19 @@ header {
 }
 .container-h > .item-four > .semi-item {
   width: 29%;
-  height: 40rem;
+  height: 649px;
   background: url(./images/blogimg1.png) top center / 100% no-repeat;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 .container-h > .item-four > .semi-item:nth-child(2) {
-  background: url(./images/blogimg2.png) no-repeat;
+  background: url(./images/blogimg2.png) top center / 100% no-repeat;
   background-size: 100%;
   position: relative;
   top: 6rem;
 }
 .container-h > .item-four > .semi-item:nth-child(3) {
-  background: url(./images/blogimg3.png) no-repeat;
+  background: url(./images/blogimg3.png) top center / 100% no-repeat;
   background-size: 100%;
   position: relative;
   top: 12rem;
@@ -1035,17 +1035,39 @@ header {
   color: var(--withe-color);
   padding-top: 1rem;
 }
-
+.container-h > .item-five {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+.container-h > .item-five > h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.container-h > .item-five > h2 > span {
+  color: var(--green-color);
+}
+.container-h > .item-five > p {
+  font-size: 1.5rem;
+}
+.ex-footer{
+  margin-top: 14rem;
+}
 .hr-header{
   width: 100% !important;
   border: none;
+  border-top: 10px solid var(--green-color);
+  
 }
 
 @media screen and (max-width: 768px) {
   header {
     background: none;
   }
-  .hr-header    display: none;
+  .hr-header {
+    display: none;
   }
   /*_____________________________________*/
 
@@ -1251,12 +1273,25 @@ header {
   }
   .container-h > .item-four {
     flex-direction: column;
-    width: 98vw;
-    margin-top: 5rem;
+    
   }
   .container-h > .item-four > .semi-item {
     width: 70%;
    }
+   .container-h > .item-four > .semi-item {
+    width: 58%;
+    height: 500px;
+  }
+  .container-h > .item-four > .semi-item:nth-child(2) {
+    position: static;
+    
+  }
+  .container-h > .item-four > .semi-item:nth-child(3) {
+    position: static;
+  }
+  .ex-footer {
+    margin-top: 0;
+}
 }
 /* -------------------------------
    ------------------------------- */
@@ -1591,16 +1626,18 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   position: relative;
   background: var(--form-color);
 }
-.formulaire > .title > h2 {
+.formulaire > .title > p {
   font-weight: 100;
+  font-size: 2rem;
 }
 .formulaire > .title span {
   color: var(--green-color);
 }
-.formulaire > .title > h5 {
+.formulaire > .title > .txt-exe {
   position: absolute;
   right: 1rem;
   bottom: 4rem;
+  font-size: 1rem;
 }
 
 .formulaire > form > .one,
