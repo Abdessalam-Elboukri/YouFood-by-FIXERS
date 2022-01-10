@@ -11,8 +11,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: bahnschrift, sans-serif;
+  font-family: bahnschrift , sans-serif;
+  --form-color: rgb(233, 233, 233);
   text-decoration: none;
+
 }
 html{
   scroll-behavior: smooth;
@@ -49,7 +51,7 @@ html{
   grid-column: 2/4;
   margin-left: 20px;
 }
-.tl_signup p {
+.tl_signup h3 {
   font-size: 3rem;
 }
 /* __________fin logo */
@@ -163,7 +165,7 @@ html{
   margin-bottom: 10px;
   position: relative;
   padding: 0px 6px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .ingr_ctnr::-webkit-scrollbar {
   width: 0;
@@ -271,7 +273,7 @@ html{
 .body_dashbord{
   background-color:#E9E9E9;
   width:100%;
-  overflow: scroll;
+  overflow-x: scroll;
   display: grid;
   padding-bottom: 50px; 
 }
@@ -471,6 +473,114 @@ html{
 
 /* ______________jamal end dashbord__________________________ */
 
+/* __________________________jamal start page manager__________ */
+.parent_sort_manager{
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 19%);
+     
+}
+
+.manager_users{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap:35px;
+  margin-top:60px;
+  background-image: url(./images/Ellipse.svg), url(./images/Ellipse.svg) ,url(./images/Ellipse.svg),url(images/Objects.svg) ,url(images/Objects.svg), url(./images/Objects.svg), url(./images/Objects.svg);
+  background-repeat:no-repeat; 
+  background-size: 24px;
+  background-position:91% 17% ,6% 40% ,93% 70%,7% 90%  ,6% 20% ,4% 60% ,96% 45%;
+} 
+.prnt_user_img {
+  display:flex;
+  justify-content:space-between;
+  width:70%;
+  height: 200px;
+  padding:15px 20px 15px 20px;
+  border:1.5px solid var(--green-color);
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.247);
+
+}
+.prnt_user_img div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prnt_user_img img{ 
+  width:115px;
+}
+.prnt_user_img h4{
+  color:var(--green-color);
+  font-size:25px;
+  font-weight: 500;
+  padding-top: 12px ;
+}
+
+.prnt_user_img .p_230{
+  color:var(--black_lite-color);
+}
+.container_all_users ::-webkit-scrollbar{
+  width:0;
+}
+
+.container_all_users{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border:1.5px solid var(--black-color);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.247);
+  border-radius: 6px;
+  width:80%;
+  gap:10px;
+  padding-bottom: 10px;
+}
+.container_all_users .txt_all_users{
+  height:100px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+.container_all_users .txt_all_users h3{
+  font-size: 30px;
+  color:var(--black_lite-color);
+}
+.manager_info_user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  border:2px solid var(--green-color);
+  height: 60px;
+}
+.manager_img_name_user {
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  margin-left: 4px;
+  width:150px; 
+}
+
+.manager_img_edt_user {
+  width:110px;
+  display:flex ;
+  justify-content:space-around;
+  
+
+}
+.manager_img_accepte_user{
+  justify-content:center;
+  gap:20px;
+}
+.manager_img_name_user img{
+  width:30px;
+}
+.manager_img_edt_user img{
+  width: 20px;
+}
+
+/* _______________________jamal end page manager___________ */
 
 
 @media only screen and (max-width: 760px) {
