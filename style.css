@@ -41,7 +41,15 @@ html{
   height:100vh;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 17px;
+}
+.p_signup {
+  padding: 10px;
+  background-image: url("images/back8.svg"), url("images/back9.svg");
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70%;
 }
 .p_signup {
   padding: 10px;
@@ -84,37 +92,35 @@ html{
 .radio {
   grid-column: 2/4;
 }
-.f_name .into,
-.l_name .into,
-.email .into,
-.pass .into,
-.c_pass .into {
+
+.allbox .into{
   display: flex;
   flex-direction: column;
   gap: 6px 10px;
   font-size: 17px;
-  padding-left: 20px;
-}
-.f_name .into input,
-.l_name .into input,
-.email .into input,
-.pass .into input,
-.c_pass .into input {
+  margin-left: 10px;
+} 
+.allbox .into input{
   border: 2px solid var(--green-color);
   width: 96%;
   height: 40px;
   border-radius: 6px;
   padding: 6px;
-}
-.email .into input {
+ }
+ .email .into input {
   width: 98%;
-}
+} 
+ .pass {
+   grid-column:2/4;
+   display:flex;
+   justify-content:space-around;
+   width:100%;
+   gap: 9px;
+ }
+ .fpass , .c_pass{
+   width:100%;
+ }
 
-.pass {
-  grid-column: 2/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .radio .form1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -123,7 +129,7 @@ html{
   align-items: center;
   border-radius: 10px;
   height: 40px;
-  width: 88%;
+  width: 96%;
   padding-left: 20px;
 }
 .email {
@@ -140,7 +146,7 @@ html{
 .radio .year {
   margin-top: 10px;
   font-size: 17px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .submit a {
   width: 150px;
@@ -150,8 +156,8 @@ html{
   color: white;
   border: 1px solid var(--green-color);
   border-radius: 5px;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
 }
 /* ____________________jamal start page INGREDIENTS  */
 .ingr_page {
@@ -792,6 +798,18 @@ header {
   color: var(--green-color);
 }
 
+.section-header {
+  height: 36rem;
+  position: relative;
+}
+.section-home {
+  position: absolute;
+  top: 7%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /*______________________________*/
 
 .navbar {
@@ -1071,7 +1089,7 @@ header {
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header {
     background: none;
   }
@@ -1095,6 +1113,10 @@ header {
   }
   .navbar-home-login .logo h2 span {
     color: var(--green-color);
+  }
+
+  .section-home {
+    position: static;
   }
   /*_____________________________________*/
 
@@ -1228,11 +1250,11 @@ header {
   .navbar .menu-wrap .menu-check:checked ~ .menu > div > div {
     opacity: 1;
   }
-
+}
   
 
   /*----------------------------*/
-
+@media (max-width:768px){
   #home {
     flex-direction: column-reverse;
     gap: 1.5rem;
@@ -1270,7 +1292,7 @@ header {
 
   .container-h > .item-three {
     padding: 0;
-}
+  }
   .container-h > .item-three > .para-one {
     padding: 2rem 0rem;
     width: 65vw;
@@ -1390,6 +1412,7 @@ header {
   border: none;
   border-radius: 5px;
   box-shadow: 0 3px #028f26;
+  cursor: pointer;
 }
 
 #home > .section-one > button {
@@ -1739,7 +1762,7 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   align-items: center;
   padding: 1rem 2rem;
 }
-.add > input[type="button"] {
+.add > input[type="submit"] {
   padding: 0.4rem 3rem;
   font-size: 15pt;
   font-weight: 900;
@@ -1747,6 +1770,9 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   border-radius: 5px;
   outline: none;
   background: var(--green-color);
+  color: var(--withe-color);
+  font-weight: 100;
+  cursor: pointer;
 }
 /* --------------------------Feedbacks start------------------------- */
 .feedbacksMain{
