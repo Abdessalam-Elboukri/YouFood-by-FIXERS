@@ -329,7 +329,7 @@ html{
 }
 .sort_form{
   display: grid;
-  grid-template-columns: 60px 155px 1fr;
+  grid-template-columns: 70px 155px 1fr;
   align-items:center;
   justify-items:center;
   
@@ -508,8 +508,8 @@ html{
 .prnt_user_img {
   display:flex;
   justify-content:space-between;
-  width:70%;
-  height: 200px;
+  width:70%; 
+  align-items:center;
   padding:15px 20px 15px 20px;
   border:1.5px solid var(--green-color);
   border-radius: 8px;
@@ -599,16 +599,39 @@ html{
 
 @media only screen and (max-width: 760px) {
   .parent_fix{
-    grid-template-rows: 82px 63px;
+    grid-template-rows: 82px auto;
+  } 
+   .prnt_user_img {
+    flex-direction:column;
+    gap: 20px; 
+  }
+  .parent_search .txt_search {
+    width: 153px;
   }
   .sort_form{
     grid-row: 2/3;
     grid-column:1/3;
+    grid-template-rows: 40px 40px;
+    justify-self: center;
   }
+  .parent_search {
+    grid-row:2/3; 
+    grid-column: 1/3;
+    flex-direction: row-reverse;
+  } 
+
+  .parent_sort {
+    height: 200px;
+}
+
+
   .p_signup{
     margin-top:30px;
     background-image:url(images/Objects.svg) ,url(./images/Ellipse.svg) ,url(./images/Ellipse.svg) ,url(./images/Ellipse.svg);
    }
+
+
+   /* _______________________ */
 .p_signup {
     margin-top: 30px;
     background-image: url(images/Objects.svg), url(./images/Ellipse.svg),
@@ -730,8 +753,10 @@ html{
     flex-direction:column;
 
   }
-  }
 
+  /* ________________________ */
+
+}
 /* ____________________jamal end page INGREDIENTS  */
 
 /* ____________jamal end sign in Page________________ */
