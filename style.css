@@ -888,8 +888,8 @@ header {
 /* ------------------home page ----------------- */
 .navbar-ce {
   background: none ;
-  padding: 1rem 0;
-  justify-content: space-around;
+  padding: 1rem 2rem 1rem 0;
+  justify-content: space-between;
 }
   .navbar-ce > .logo > h2 {
   display: none ;
@@ -939,7 +939,7 @@ header {
 }
 #home > .section-one > p {
   text-transform: uppercase;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 #home > .section-one > a {
   text-transform: capitalize;
@@ -949,6 +949,7 @@ header {
   background: url(./images/BG.svg) no-repeat;
   background-size: cover;
   outline: none;
+  margin: 0 auto;
   border: none;
   color: var(--withe-color);
   cursor: pointer;
@@ -982,7 +983,7 @@ header {
   width: 15rem;
   text-align: center;
   padding: 1.5rem 0rem;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .container-h > .item-two {
@@ -1085,7 +1086,7 @@ header {
   
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   header {
     background: none;
   }
