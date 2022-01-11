@@ -2008,7 +2008,7 @@ hr{
 
 .signin-leftside{
   background-image: url(./images/fffff.png);
-  background-size: 100%;
+  background-size: cover;
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -2104,5 +2104,8 @@ input[type="checkbox"]:focus{
 @media (max-width:650px){
   .signin-leftside{
     display: none;
+  }
+  .signin-rightside{
+    padding:0;
   }
 }
