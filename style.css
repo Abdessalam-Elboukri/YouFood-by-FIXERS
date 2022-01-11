@@ -654,33 +654,20 @@ html{
     grid-row: 5/6;
     grid-column: 1/4;
     margin-left: 20px;
+    width: 100%;
   }
   .pass {
-    grid-row: 6/8;
     grid-column: 1/4;
+    grid-row:6/8;
     margin-left: 20px;
+    margin-top:9px;
+    flex-direction:column;
+    justify-content: center;
+    gap: 2px;
   }
-  .fpass {
-    grid-row: 6/7;
-    grid-column: 1/4;
-    margin-top: 7px;
-  }
-  .c_pass {
-    grid-row: 7/8;
-    grid-column: 1/4;
-    margin-top: 17px;
-  }
+  
 
-  .email {
-    grid-row: 5/6;
-    grid-column: 1/4;
-    margin-left: 20px;
-  }
-  .pass {
-    grid-row: 6/8;
-    grid-column: 1/4;
-    margin-left: 20px;
-  }
+
   .fpass {
     grid-row: 6/7;
     grid-column: 1/4;
@@ -691,58 +678,42 @@ html{
     grid-column: 1/4;
     margin-top: 17px;
   }
+  
   .submit {
     grid-row: 8/9;
     grid-column: 1/4;
     width: 100%;
     margin-left: 20px;
   }
-
-  .f_name form input,
-  .l_name form input,
-  .email form input,
-  .pass form input,
-  .c_pass form input {
+.allbox .into input {
     border: 2px solid var(--green-color);
-    width: 90%;
-    height: 40px;
-    border-radius: 6px;
-    padding: 6px;
-    align-items: center;
-  }
-  .f_name form input {
-    width: 88%;
-  }
-  .radio .form1 {
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 15px;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  .email form {
-    margin-top: 10px;
-  } 
-
-  .f_name .into input,
-  .l_name .into input,
-  .email .into input,
-  .pass .into input,
-  .c_pass .into input {
-    border: 2px solid var(--green-color);
-    width: 90%;
+    width: 93%;
     height: 40px;
     border-radius: 6px;
     padding: 6px;
     align-items: center;
   }
   .f_name .into input {
-    width: 88%;
+    width: 97%;
   }
-
-  .email .into {
+  .l_name .into input {
+    width: 98.5%;
+  }
+  .radio .form1 {
+    width: 90%; 
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .email .into { 
     margin-top: 10px;
   }
+  .email .into input{
+    width: 94.9%;
+    padding: 6px;
+  }
+  
   /* ____________jamal end sign up Page________________ */
   .ingr_ctnr {
     width: 80%;
