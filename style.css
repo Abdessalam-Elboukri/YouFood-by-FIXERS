@@ -753,7 +753,7 @@ html{
     flex-direction:column;
 
   }
-  }
+}
 
 /* ____________________jamal end page INGREDIENTS  */
 
@@ -793,16 +793,15 @@ header {
 }
 
 .section-header {
-  height: 36rem;
-  /* position: relative; */
+  height: 100vh;
 }
-/* .section-home {
+.section-home {
   position: absolute;
   top: 7%;
   bottom: 0;
   right: 0;
   left: 0;
-} */
+}
 
 /*______________________________*/
 
@@ -1108,10 +1107,6 @@ header {
   .navbar-home-login .logo h2 span {
     color: var(--green-color);
   }
-
-  /* .section-home {
-    position: static;
-  } */
   /*_____________________________________*/
 
   .navbar {
@@ -1245,7 +1240,6 @@ header {
     opacity: 1;
   }
 }
-  
 
   /*----------------------------*/
 @media (max-width:768px){
