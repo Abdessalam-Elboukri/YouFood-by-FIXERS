@@ -794,15 +794,15 @@ header {
 
 .section-header {
   height: 36rem;
-  position: relative;
+  /* position: relative; */
 }
-.section-home {
+/* .section-home {
   position: absolute;
   top: 7%;
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */
 
 /*______________________________*/
 
@@ -1109,9 +1109,9 @@ header {
     color: var(--green-color);
   }
 
-  .section-home {
+  /* .section-home {
     position: static;
-  }
+  } */
   /*_____________________________________*/
 
   .navbar {
