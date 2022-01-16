@@ -1898,12 +1898,6 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-}
-.comment .appInfo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 64%;
 }
 .comment .appName h5{
@@ -1954,11 +1948,10 @@ background-position:  84% 8%, 46% 16%, 63% 86%, 84% 34%, 3% 33%,
   gap: 10px;
 }
 .rightSide .rateInfo{
-  flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
 }
 .rightSide .rateInfo img{
-  width: 60%;
+  width: 30%;
 }
 .rightSide .appInfo{
   width:100%;
@@ -1991,7 +1984,6 @@ hr{
   .yourComment textarea{
     width: 80%;
     height: 20vh;
-    /* margin: 0 auto; */
   }
   .comment .rateInfo{
     width: 100%;
